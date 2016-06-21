@@ -5070,27 +5070,31 @@ div[class^='highlight'] pre {
   height: 40px;
   overflow: hidden;
   text-indent: -9999em;
-  background: url("../img/boundless-exchange-logo.png") no-repeat;
+  background: url("../img/suite-logo.png") no-repeat;
 }
-#header .suite_logo_only {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 1em;
-}
-#header .suite_logo_only a {
-  background: url("../img/boundless-exchange-logo.png") no-repeat;
-  width: 40px;
-  height: 40px;
-  text-indent: -9999em;
+
+#header .exchange_logo a {
+  margin: 1em 0 0 1em;
   float: left;
+  width: 330px;
+  height: 40px;
   overflow: hidden;
-  padding-left: 10px;
+  text-indent: -9999em;
+  background: url("../img/exchange-logo.png") no-repeat;
 }
-#header .suite_logo_only i {
-  color: white;
-  font-size: 28px;
-  padding: 0.2em 0.5em 0;
+
+#header .desktop_logo a {
+  margin: 1em 0 0 1em;
+  float: left;
+  width: 330px;
+  height: 40px;
+  overflow: hidden;
+  text-indent: -9999em;
+  background: url("../img/desktop-logo.png") no-repeat;
 }
+
+
+
 #header .community_logo {
   display: inline-block;
   padding-left: 15px;
@@ -5190,12 +5194,26 @@ div[class^='highlight'] pre {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
   #header .suite_logo a {
-    background: url("../img/boundless-exchange-logo@2x.png") no-repeat;
+    background: url("../img/suite-logo@2x.png") no-repeat;
+    background-size: 321px 40px;
+  }
+  #header .exchange_logo a {
+    background: url("../img/exchange-logo@2x.png") no-repeat;
+    background-size: 321px 40px;
+  }
+  #header .desktop_logo a {
+    background: url("../img/desktop-logo@2x.png") no-repeat;
     background-size: 321px 40px;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 320px) and (max-width: 480px), only screen and (min--moz-device-pixel-ratio: 1.5) and (min-width: 320px) and (max-width: 480px), only screen and (-o-min-device-pixel-ratio: 1.5 / 1) and (min-width: 320px) and (max-width: 480px), only screen and (min-resolution: 144dpi) and (min-width: 320px) and (max-width: 480px), only screen and (min-resolution: 1.5dppx) and (min-width: 320px) and (max-width: 480px) {
   #header .suite_logo a {
+    margin-left: 5px;
+  }
+  #header .exchange_logo a {
+    margin-left: 5px;
+  }
+  #header .desktop_logo a {
     margin-left: 5px;
   }
 }
@@ -5294,9 +5312,9 @@ div[class^='highlight'] pre {
 }
 #header .powered_by {
   float: right;
-  background: url("../img/powered-by-geonode.png") no-repeat;
+  background: url("../img/powered-by-boundless.png") no-repeat;
   height: 30px;
-  width: 100px;
+  width: 128px;
   margin: 1.3em 1em 0 0;
 }
 @media screen and (max-width: 768px) {
@@ -5373,7 +5391,7 @@ div[class^='highlight'] pre {
   width: 70px;
 }
 .back-to-suite .back-to-suite-inner {
-  background: url("../img/boundless-exchange-logo.png") no-repeat;
+  background: url("../img/suite-logo.png") no-repeat;
   height: 40px;
   width: 40px;
   margin: 1em auto;
@@ -5501,7 +5519,7 @@ footer .logo-link {
   margin-right: 5px;
 }
 footer .logo-link .boundless-logo {
-  background: url("../img/boundless-logo-32.png") no-repeat;
+  background: url("../img/boundless-icon-32.png") no-repeat;
   height: 32px;
   width: 32px;
   display: inline-block;

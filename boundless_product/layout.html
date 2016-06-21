@@ -18,8 +18,17 @@
   {% endblock %}
 
   {# FAVICON #}
-  {% if favicon %}
-    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+
+  {# {% if favicon %} #}
+  {#   <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/> #}
+  {# {% endif %} #}
+
+  {% if project is equalto 'Boundless Suite' %}
+     <link rel="shortcut icon" href="{{ pathto('_static/img/suite.ico', 1) }}"/>
+  {% elif project is equalto 'Boundless Exchange' %}
+     <link rel="shortcut icon" href="{{ pathto('_static/img/exchange.ico', 1) }}"/>
+  {% elif project is equalto 'Boundless Desktop' %}
+     <link rel="shortcut icon" href="{{ pathto('_static/img/desktop.ico', 1) }}"/>
   {% endif %}
 
   {# CSS #}
@@ -88,7 +97,16 @@
     {# HEADER NAV, VARIES WITH PROJECT #}
 
       <div id="header" class="selfclear">
-        <div class="suite_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a> </div>
+        {% if project is equalto 'Boundless Suite' %}
+        <div class="suite_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
+        {% elif project is equalto 'Boundless Exchange' %}
+        <div class="exchange_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
+        {% elif project is equalto 'Boundless Desktop' %}
+        <div class="desktop_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
+        {% else %}
+        <div><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
+        {% endif %}
+
         <div class="version_info">{{ version }}</div>
         <a class="powered_by" href="http://boundlessgeo.com" target="_blank"> </a>
       </div>
