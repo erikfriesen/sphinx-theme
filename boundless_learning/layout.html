@@ -3,10 +3,10 @@
 {%- macro breadcrumbs() %}
 <div>
   {%- if coursename %}
-    <a href="{{ pathto('../index.html', 1) }}" title="Course Home">{{ coursename|striptags }}</a> {{ breadcrumbdelim }}&nbsp;
+    <a href="https://connect.boundlessgeo.com/Community/Learning-Center/Boundless-{{ project }}" title="Course Home">{{ coursename|striptags }}</a> {{ breadcrumbdelim }}&nbsp;
   {%- endif %}
   {%- block rootrellink %}
-  <a href="{{ pathto('index') }}">{{ project }}</a>
+  <a href="https://connect.boundlessgeo.com/Community/Learning-Center/Boundless-{{ project }}">{{ project }}</a>
   {%- endblock %}
   {%- for parent in parents %}
     {{ breadcrumbdelim }} <a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>
