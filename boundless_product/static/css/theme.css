@@ -5310,6 +5310,14 @@ div[class^='highlight'] pre {
   font-size: 1.4em;
   font-weight: 300;
 }
+#header .product_name a{
+  margin: 1.2em 3.236em 0 1.5em;
+  float: left;
+  color: white;
+  font-size: 1.4em;
+  font-weight: 300;
+  text-decoration: none;
+}
 #header .powered_by {
   float: right;
   background: url("../img/powered-by-boundless.png") no-repeat;
