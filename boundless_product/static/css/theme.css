@@ -5066,11 +5066,12 @@ div[class^='highlight'] pre {
 #header .suite_logo a {
   margin: 1em 0 0 1em;
   float: left;
-  width: 330px;
+  width: 115px;
   height: 40px;
   overflow: hidden;
   text-indent: -9999em;
-  background: url("../img/suite-logo.png") no-repeat;
+  background: url("../img/suite-logo.svg") no-repeat;
+  background-size: contain
 }
 
 #header .exchange_logo a {
@@ -5196,8 +5197,8 @@ div[class^='highlight'] pre {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
   #header .suite_logo a {
-    background: url("../img/suite-logo.png") no-repeat;
-    background-size: 321px 40px;
+    background: url("../img/suite-logo.svg") no-repeat;
+    background-size: 115px 40px;
   }
   #header .exchange_logo a {
     background: url("../img/exchange-logo.svg") no-repeat;
