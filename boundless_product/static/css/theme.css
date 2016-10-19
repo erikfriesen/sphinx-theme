@@ -5076,11 +5076,12 @@ div[class^='highlight'] pre {
 #header .exchange_logo a {
   margin: 1em 0 0 1em;
   float: left;
-  width: 134px;
+  width: 154px;
   height: 40px;
   overflow: hidden;
   text-indent: -9999em;
-  background: url("../img/exchange-logo-white.png") no-repeat;
+  background: url("../img/exchange-logo.svg") no-repeat;
+  background-size: contain
 }
 
 #header .desktop_logo a {
@@ -5199,8 +5200,8 @@ div[class^='highlight'] pre {
     background-size: 321px 40px;
   }
   #header .exchange_logo a {
-    background: url("../img/exchange-logo-white.png") no-repeat;
-    background-size: 134px 40px;
+    background: url("../img/exchange-logo.svg") no-repeat;
+    background-size: 154px 40px;
   }
   #header .desktop_logo a {
     background: url("../img/desktop-logo.svg") no-repeat;
