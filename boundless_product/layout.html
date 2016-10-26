@@ -28,7 +28,10 @@
   {% elif project is equalto 'Boundless Exchange' %}
      <link rel="shortcut icon" href="{{ pathto('_static/img/exchange.ico', 1) }}"/>
   {% elif project is equalto 'Boundless Desktop' %}
-     <link rel="shortcut icon" href="{{ pathto('_static/img/desktop.ico', 1) }}"/>
+     <ilink rel="shortcut icon" href="{{ pathto('_static/img/desktop.ico', 1) }}"/>
+  {% else %}
+     
+     <ilink rel="shortcut icon" href="{{ pathto('_static/img/desktop.ico', 1) }}"/>
   {% endif %}
 
   {# CSS #}
@@ -104,6 +107,7 @@
         {% elif project is equalto 'Boundless Desktop' %}
         <div class="desktop_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
         {% else %}
+        <div class="desktop_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
         <div class="product_name"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
         {% endif %}
 
