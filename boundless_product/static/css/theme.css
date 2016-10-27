@@ -4282,7 +4282,7 @@ div[class^='highlight'] pre {
   display: block;
   position: relative;
   font-size: 90%;
-  color: #b3b3b3;
+  color: #ffffff;
 }
 .wy-menu-vertical a:hover {
   background-color: #4e4a4a;
@@ -5058,7 +5058,7 @@ div[class^='highlight'] pre {
   height: 70px;
   padding: 0;
   overflow: hidden;
-  background-color: #4e5156;
+  background-color: #333333;
   display: block;
   z-index: 1000;
   width: 100%;
@@ -5414,7 +5414,7 @@ div[class^='highlight'] pre {
 
 .wy-nav-side {
   top: 0px;
-  background: #272525;
+  background: #757575;
 }
 
 nav.stickynav {
