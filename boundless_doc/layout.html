@@ -3,8 +3,6 @@
 {%- macro breadcrumbs() %}
 <div id="breadcrumbs">
   {%- block rootrellink %}
-  <a href="http://boundlessgeo.com/">Home</a>{{ breadcrumbdelim }}
-  <a href="http://boundlessgeo.com/resources/">Resources</a>{{ breadcrumbdelim }}
   <a href="{{ pathto('index') }}">{{ project }}</a>
   {%- endblock %}
   {%- for parent in parents %}
@@ -161,7 +159,7 @@
 	<div id="wrapper">
 				<header id="masthead" class="site-header" role="banner">
 			<div class="container">
-				<a href="/" rel="home" id="logo"><img src="{{ pathto('_static/logo.png', 1) }}"></a>
+				<a href="http://boundlessgeo.com" rel="home" id="logo"><img src="{{ pathto('_static/logo.png', 1) }}"></a>
 				<div class="pull-right">
 					<div class="pull-left">
 						<div class="menu-main-container">
