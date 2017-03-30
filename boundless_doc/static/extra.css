@@ -139,13 +139,13 @@ margin-bottom: 0.7em;
 ul,ol {
 margin-top: 1.0em;
 margin-bottom: 1.0em;
-list-style-type: none !important;
 }
 
 
 li {
 margin-bottom: 0em;
 margin-top: 0em;
+font-size: 14px !important;
 }
 
 
@@ -162,7 +162,7 @@ a.headerlink:hover {
 }
 
 #rightbar_main, #rightbar_bar {
-  font-size: 110%;
+  font-size: 100%;
 }
 
 pre {
