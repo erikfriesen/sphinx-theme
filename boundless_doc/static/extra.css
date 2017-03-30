@@ -198,13 +198,11 @@ margin: 0.5em 0 1em;
 
 .section img {
 width: auto;
-border: 1px solid #888;
--webkit-box-shadow: 0.33em 0.33em 0.17em #888, 0.33em 0.33em 1em rgba(0,0,0,0.3);
--o-box-shadow: 0.33em 0.33em 0.17em #888, 0.33em 0.33em 1em rgba(0,0,0,0.3);
--moz-box-shadow: 0.33em 0.33em 0.17em #888, 0.33em 0.33em 1em rgba(0,0,0,0.3);
-box-shadow: 0.33em 0.33em 0.17em #888, 0.33em 0.33em 1em rgba(0,0,0,0.3);
+border: 1px solid #aaaaaa;
 max-width: 100%;
 margin: 0.5em 0 1em;
+padding: 2px;
+border-radius: 5px;
 }
 
 .section {
