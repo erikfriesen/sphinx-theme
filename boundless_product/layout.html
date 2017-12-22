@@ -105,6 +105,8 @@
       <div id="header" class="selfclear">
         {% if project is equalto 'Boundless Suite' %}
         <div class="suite_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
+        {% elif project is equalto 'Boundless Exchange' and django %}
+        <div class="exchange_logo"><a href="../../../../">{{ shorttitle }}</a></div>
         {% elif project is equalto 'Boundless Exchange' %}
         <div class="exchange_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
         {% elif project is equalto 'Boundless Desktop' %}
