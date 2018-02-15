@@ -197,46 +197,6 @@
     </header>
   {%- endblock %}
 
-  {%- block secondary_nav %}
-  <section class="navi">
-    <div class="secondarynav">
-      <div class=" breadcrumbs pull-left">
-        {%- block breadcrumbbar %}{{ breadcrumbs() }}{% endblock %}
-      </div>
-
-
-      {%- if (prev or next) %}
-      <!-- Next/Prev -->
-      <ul class="right-nav list-unstyled">
-
-          <li class="next">
-            {%- if next %}
-            <a href="{{ next.link|e }}" title="next chapter"><i class="glyphicon glyphicon-chevron-right"></i></a>
-            {%- endif %}
-          </li>
-          <li class="previous">
-            {%- if prev %}
-            <a href="{{ prev.link|e }}" title="previous chapter"><i class="glyphicon glyphicon-chevron-left"></i></a>
-            {%- endif %}
-          </li>
-
-          <li class="dropdown">
-            {%- if display_toc %}
-            <a class="dropdown-toggle" id="page-content" data-toggle="dropdown">
-              Page Content <i class="glyphicon glyphicon-chevron-down" style="font-size: 12px;"></i>
-            </a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="page-content">
-              {{ toc }}
-            </ul>
-            {%- endif %}
-          </li>
-
-      </ul>
-    {%- endif %}
-    </div>
-  </section>
-  {%- endblock %}
-
   <!-- Page Content -->
   <section>
     <div class="container">
