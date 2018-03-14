@@ -940,6 +940,7 @@ big, small {
 
 .fa-fast-backward:before {
   content: "\f049";
+  content: "\f049";
 }
 
 .fa-backward:before {
@@ -5178,7 +5179,16 @@ div[class^='highlight'] pre {
   background-size: contain;
 }
 
-
+#header .anywhere_logo a {
+  margin: 1em 0 0 1.4em;
+  float: left;
+  width: 134px;
+  height: 40px;
+  overflow: hidden;
+  text-indent: -9999em;
+  background: url("../img/anywhere-logo.svg") no-repeat;
+  background-size: contain;
+}
 
 #header .community_logo {
   display: inline-block;
@@ -5288,6 +5298,10 @@ div[class^='highlight'] pre {
   }
   #header .desktop_logo a {
     background: url("../img/desktop-logo.svg") no-repeat;
+    background-size: 134px 40px;
+  }
+  #header .anywhere_logo a {
+    background: url("../img/anywhere-logo.svg") no-repeat;
     background-size: 134px 40px;
   }
 }
@@ -5606,7 +5620,7 @@ footer .logo-link {
   margin-right: 5px;
 }
 footer .logo-link .boundless-logo {
-  background: url("../img/boundless-icon-32.png") no-repeat;
+  background: url("../img/boundless-icon.svg") no-repeat;
   height: 32px;
   width: 32px;
   display: inline-block;
