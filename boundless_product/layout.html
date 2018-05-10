@@ -33,6 +33,8 @@
      <link rel="shortcut icon" href="{{ pathto('_static/img/desktop.ico', 1) }}"/>
   {% elif project is equalto 'Boundless Anywhere' %}
      <link rel="shortcut icon" href="{{ pathto('_static/img/boundless.ico', 1) }}"/>
+  {% elif project is equalto 'Boundless BOTS' %}
+     <link rel="shortcut icon" href="{{ pathto('_static/img/boundless.ico', 1) }}"/>
   {% else %}
      <link rel="shortcut icon" href="{{ pathto('_static/img/desktop.ico', 1) }}"/>
   {% endif %}
@@ -110,6 +112,8 @@
         <div class="suite_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
         {% elif project is equalto 'Boundless Anywhere' %}
         <div class="anywhere_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
+        {% elif project is equalto 'Boundless BOTS' %}
+        <div class="bots_logo"><a href="{{ pathto('index') }}">{{ shorttitle }}</a></div>
         {% elif project is equalto 'Boundless Exchange' and django %}
         <div class="exchange_logo"><a href="../../../../">{{ shorttitle }}</a></div>
         {% elif project is equalto 'Boundless Exchange' %}
