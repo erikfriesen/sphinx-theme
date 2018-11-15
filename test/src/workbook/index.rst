@@ -7,10 +7,12 @@ Workbook
 
 Use of ``slides`` theme.
 
-.. rst-class:: section
-
 Style Guidelines
 ================
+
+.. ifslides::
+   
+   Tone to use when writing.
 
 .. ifnotslides::
 
@@ -169,10 +171,12 @@ For shell scripts, new lines can be escaped with a backslash character :kbd:`\\`
 
 For windows commands, characters can be escaped with a :kbd:`^` character, but it is so unusual that it is not recommended.
 
-.. rst-class:: section
-
 Sphinx Inline Directives
 ========================
+
+.. ifslides::
+   
+   Directives with cut-and-paste examples.
 
 .. ifnotslides::
    
@@ -522,6 +526,10 @@ Although we have pulled the above definitions out into a shared :file:`conf.py` 
 
 Sphinx Block Directives
 ========================
+
+.. ifslides::
+   
+   Blocks used to organize content.
 
 .. ifnotslides::
    

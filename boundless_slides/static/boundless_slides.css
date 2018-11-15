@@ -14,15 +14,24 @@
     color: white;
 }
 
-.slides > article.section {
+.slides > article.level-2 {
     color: white;
     background-image:  url("backgroundblueslide.png"), url("backgroundblue.png");
     background-repeat: no-repeat, repeat;
     background-size: 80%, 50%;
-     background-position: center;
+    background-position: center;
     background-color: #2A728E;
 }
 
-.slides > article.section h2 {
+.slides > article.level-2 h2 {
     color: white;
+    margin-top: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.slides > article.level-2 p {
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
 }
