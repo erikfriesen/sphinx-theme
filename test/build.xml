@@ -15,6 +15,34 @@
     <mkdir dir="${build}"/>
   </target>
 
+  <target name="rtd" depends="init"
+          description="Test sphinx_rtd_theme">
+    <echo>Building test for sphinx_rtd_theme...</echo>
+    <antcall target="sphinx">
+        <param name="tags" value="-t instructor"/>
+        <param name="builder" value="html"/>
+        <param name="theme" value="sphinx_rtd_theme"/>
+        <param name="outdir" value="${build}/html/"/>
+    </antcall>
+    <antcall target="open">
+        <param name="file" value="${build}/html/index.html"/>
+    </antcall>
+  </target>
+  
+  <target name="boundless_rtd" depends="init"
+          description="Test sphinx_rtd_theme">
+    <echo>Building test for boundless_rtd ...</echo>
+    <antcall target="sphinx">
+        <param name="tags" value="-t instructor"/>
+        <param name="builder" value="html"/>
+        <param name="theme" value="boundless_rtd"/>
+        <param name="outdir" value="${build}/html/"/>
+    </antcall>
+    <antcall target="open">
+        <param name="file" value="${build}/html/index.html"/>
+    </antcall>
+  </target>
+  
   <target name="learning" depends="init"
           description="Test learning_rtd_theme">
     <echo>Building test for learning_rtd_theme...</echo>
@@ -75,8 +103,8 @@
     </exec>
     <echo>Shrinking PDF graphics on ${build}/latex/test.tex</echo>
     <!--
-	<replace file="${build}/latex/${pdf}.tex"
-		 token="sphinxincludegraphics{" value="sphinxincludegraphics[scale=0.5]{"
+    <replace file="${build}/latex/${pdf}.tex"
+         token="sphinxincludegraphics{" value="sphinxincludegraphics[scale=0.5]{"
     />-->
     <!-- run twice in a row to get TOC, and ignore errors -->
     <echo>Generate labels for ${pdf}.tex...</echo>
