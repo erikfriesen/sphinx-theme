@@ -16,7 +16,7 @@
   </target>
 
   <target name="rtd" depends="init"
-          description="Test sphinx_rtd_theme">
+          description="Test sphinx_rtd_theme (latested 0.41 release)">
     <echo>Building test for sphinx_rtd_theme...</echo>
     <antcall target="sphinx">
         <param name="tags" value="-t instructor"/>
@@ -30,7 +30,7 @@
   </target>
   
   <target name="boundless_rtd" depends="init"
-          description="Test sphinx_rtd_theme">
+          description="Test sphinx_rtd_theme (as used by server team)">
     <echo>Building test for boundless_rtd ...</echo>
     <antcall target="sphinx">
         <param name="tags" value="-t instructor"/>
@@ -43,8 +43,8 @@
     </antcall>
   </target>
   
-  <target name="learning" depends="init"
-          description="Test learning_rtd_theme">
+  <target name="learning_rtd" depends="init"
+          description="Test learning_rtd_theme (as used by training team)">
     <echo>Building test for learning_rtd_theme...</echo>
     <antcall target="sphinx">
         <param name="tags" value="-t instructor"/>
@@ -58,12 +58,12 @@
   </target>
 
   <target name="slides" depends="init"
-          description="Test learning_slides">
-    <echo>Building test for learning_slides...</echo>
+          description="Test boundless_slides and bounldess_single themes">
+    <echo>Building test for slides...</echo>
     <antcall target="sphinx">
         <param name="tags" value=""/>
         <param name="builder" value="slides"/>
-        <param name="theme" value="slides"/>
+        <param name="theme" value="boundless_slides"/>
         <param name="outdir" value="${build}/slides/"/>
     </antcall>
     <antcall target="open">

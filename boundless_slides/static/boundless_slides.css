@@ -19,10 +19,16 @@
     background-image:  url("backgroundblueslide.png"), url("backgroundblue.png");
     background-repeat: no-repeat, repeat;
     background-size: 80%, 50%;
-     background-position: center;
+    background-position: center;
     background-color: #2A728E;
 }
 
 .slides > article.section h2 {
     color: white;
+    margin-top: 0px;
+    margin: 250px 50px 0px 50px;
+}
+.slides > article.section p {
+    color: white;
+    margin: 20px 50px 0px 50px;
 }

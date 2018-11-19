@@ -5,13 +5,17 @@ Workbook
    :theme: boundless_slides
    :autoslides: True
 
-Use of ``slides`` theme.
+Use of ``boundless_slides`` theme.
 
 .. rst-class:: section
 
 Style Guidelines
 ================
 
+.. ifslides::
+   
+   Tone used when writing text.
+   
 .. ifnotslides::
 
    This section concerns the tone to use when writing text for pages.
@@ -173,6 +177,10 @@ For windows commands, characters can be escaped with a :kbd:`^` character, but i
 
 Sphinx Inline Directives
 ========================
+
+.. ifslides::
+   
+   With examples for workbook consistency.
 
 .. ifnotslides::
    
@@ -523,6 +531,10 @@ Although we have pulled the above definitions out into a shared :file:`conf.py` 
 Sphinx Block Directives
 ========================
 
+.. ifslides::
+   
+   With examples for workbook consistency.
+   
 .. ifnotslides::
    
    Second section on writing block directives, commonly used to orgnaize blocks of content.
