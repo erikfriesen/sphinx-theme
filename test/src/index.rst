@@ -12,7 +12,6 @@ Sphinx Theme Test
       
 .. slide:: Sphinx Theme Test
    :level: 1
-   :class: title-image
    
    For internal testing of boundless sphinx themes.
 

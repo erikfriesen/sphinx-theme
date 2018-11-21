@@ -7,8 +7,6 @@ Workbook
 
 Use of ``boundless_slides`` theme.
 
-.. rst-class:: section
-
 Style Guidelines
 ================
 
@@ -172,8 +170,6 @@ For shell scripts, new lines can be escaped with a backslash character :kbd:`\\`
       -DGEOSERVER_DATA_DIR=/var/lib/geoserver_data/release
 
 For windows commands, characters can be escaped with a :kbd:`^` character, but it is so unusual that it is not recommended.
-
-.. rst-class:: section
 
 Sphinx Inline Directives
 ========================
@@ -1082,7 +1078,7 @@ Combined with line highlighting to help direct exercises where configuration fil
 
    .. literalinclude:: files/airports.ysld
       :language: yaml
-      :emphasize-lines: 5-6
+      :emphasize-lines: 4-5
 
 Example:
 
