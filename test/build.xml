@@ -1,4 +1,4 @@
-<project name="example" default="learning"
+<project name="example" default="all"
  xmlns:if="ant:if"
  xmlns:unless="ant:unless"
 >
@@ -14,23 +14,25 @@
   <target name="init">
     <mkdir dir="${build}"/>
   </target>
-
+  
+  <target name="all" depends="rtd,instructor,boundless_rtd"/>
+  
   <target name="rtd" depends="init"
-          description="Test sphinx_rtd_theme (latested 0.41 release)">
+          description="Test html sphinx_rtd_theme (latested 0.41 release)">
     <echo>Building test for sphinx_rtd_theme...</echo>
     <antcall target="sphinx">
         <param name="tags" value="-t instructor"/>
         <param name="builder" value="html"/>
         <param name="theme" value="sphinx_rtd_theme"/>
-        <param name="outdir" value="${build}/html/"/>
+        <param name="outdir" value="${build}/rtd/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/html/index.html"/>
+        <param name="file" value="${build}/rtd/index.html"/>
     </antcall>
   </target>
   
   <target name="boundless_rtd" depends="init"
-          description="Test sphinx_rtd_theme (as used by server team)">
+          description="Test html sphinx_rtd_theme (as used by server team)">
     <echo>Building test for boundless_rtd ...</echo>
     <antcall target="sphinx">
         <param name="tags" value="-t instructor"/>
@@ -43,22 +45,22 @@
     </antcall>
   </target>
   
-  <target name="learning_rtd" depends="init"
-          description="Test learning_rtd_theme (as used by training team)">
-    <echo>Building test for learning_rtd_theme...</echo>
+  <target name="instructor" depends="init"
+          description="Test workbook with learning_rtd_theme (as used by training team)">
+    <echo>Building instructor for learning_rtd_theme...</echo>
     <antcall target="sphinx">
         <param name="tags" value="-t instructor"/>
         <param name="builder" value="html"/>
         <param name="theme" value="learning_rtd_theme"/>
-        <param name="outdir" value="${build}/html/"/>
+        <param name="outdir" value="${build}/workbook/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/html/index.html"/>
+        <param name="file" value="${build}/workbook/index.html"/>
     </antcall>
   </target>
 
   <target name="slides" depends="init"
-          description="Test boundless_slides and bounldess_single themes">
+          description="Test slides using boundless_slides and bounldess_single themes">
     <echo>Building test for slides...</echo>
     <antcall target="sphinx">
         <param name="tags" value=""/>
@@ -72,7 +74,7 @@
   </target>
 
   <target name="server" depends="init"
-          description="Test server_rtd_theme">
+          description="Test html generatoin server_rtd_theme">
     <echo>Building test for server_rtd_theme...</echo>
     <antcall target="sphinx">
         <param name="tags" value=""/>

@@ -43,6 +43,20 @@
     </antcall>
   </target>
 
+  <target name="rtd" depends="init"
+          description="Test sphinx_rtd_theme">
+    <echo>Building test for sphinx_rtd_theme...</echo>
+    <antcall target="sphinx">
+        <param name="tags" value=""/>
+        <param name="builder" value="html"/>
+        <param name="theme" value="sphinx_rtd_theme"/>
+        <param name="outdir" value="${build}/server/"/>
+    </antcall>
+    <antcall target="open">
+        <param name="file" value="${build}/server/index.html"/>
+    </antcall>
+  </target>
+  
   <target name="server" depends="init"
           description="Test server_rtd_theme">
     <echo>Building test for server_rtd_theme...</echo>
