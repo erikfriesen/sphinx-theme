@@ -1,10 +1,6 @@
 Workbook
 ********
 
-.. slideconf::
-   :theme: slides
-   :autoslides: True
-
 Use of ``slides`` theme.
 
 .. ifnotslides::

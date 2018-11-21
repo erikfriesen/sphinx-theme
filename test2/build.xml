@@ -1,4 +1,4 @@
-<project name="example" default="learning"
+<project name="example" default="default"
  xmlns:if="ant:if"
  xmlns:unless="ant:unless"
 >
@@ -13,6 +13,10 @@
 
   <target name="init">
     <mkdir dir="${build}"/>
+  </target>
+
+  <target name="default" depends="learning,slides"
+          description="Test build of learning and slides">
   </target>
 
   <target name="learning" depends="init"
