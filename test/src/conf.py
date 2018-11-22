@@ -186,14 +186,12 @@ htmlhelp_basename = "Test"
 
 slide_title = project
 
-autoslides = False
+autoslides = True
 slide_theme = 'boundless_slides'
 subtitle = 'Slide sub title'
 slide_footer = 'slide footer'
 slide_levels = 4
 slide_numbers = True
-# slide_theme_options = {'custom_css': 'boundless_slides.css'}
-
 
 # requires html and slides build
 slide_link_to_html = True
@@ -261,3 +259,8 @@ latex_elements = {
 
 # If false, no module index is generated.
 #latex_use_modindex = False
+
+# along with |release| |version| and |today|
+rst_epilog = """
+.. |theme| replace:: {theme}
+""".format(theme=html_theme)

@@ -5,7 +5,7 @@ Workbook
    :theme: boundless_slides
    :autoslides: True
 
-Use of ``boundless_slides`` theme.
+Use of |theme| theme.
 
 Style Guidelines
 ================

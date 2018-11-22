@@ -2,22 +2,18 @@
 Sphinx Theme Test
 #################
 
-.. consistent title slide and section break to introduce module
+.. ifslides::
 
-.. only:: instructor
-   
-   .. admonition:: Instructor Notes
-      
-      * `Sides <../slides/index.html>`__
-      
-.. slide:: Sphinx Theme Test
-   :level: 1
-   :class: title-image
-   
    For internal testing of sphinx themes.
 
-.. contents toctree presented as an inline slide to reduce duplication
+.. ifnotslides::
 
+   .. only:: instructor
+  
+      .. admonition:: Instructor Notes
+     
+         * `Sides <../slides/index.html>`__
+      
 .. slide:: Writing Guide
    :level: 3
    :inline-contents: True

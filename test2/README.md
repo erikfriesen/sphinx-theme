@@ -11,35 +11,39 @@ For this to work section breaks are marked:
 
 ```
 .. rst-class:: section
-
-Style Guidelines
-================
 ```
 
-This allows the default `slides` and `single_level` slide themes to work out of the box without modification.
+## Style Guidelines
+
+This allows the default `slides` and `single_level` slide themes to work out of the box without modification:
+
+```
+_static/boundless_slides.css
+_static/cover.png
+_static/backgroundblue.png
+_static/backgroundblueslide.png
+```
 
 ## Building
 
 To try out the slide functionality:
-
 ```
-ant slides
-```
-
-To generate `html` a target is setup for each theme:
-
-```
-ant learning
+ant default
 ```
 
+To build `slides` with your choice of `html` theme:
+
 ```
-ant server
+ant slides learning
 ```
 
 ```
-ant rtd
+ant slides server
 ```
 
+```
+ant slides rtd
+```
 
 PDF output requires pdflatex:
 

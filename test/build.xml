@@ -15,7 +15,8 @@
     <mkdir dir="${build}"/>
   </target>
   
-  <target name="all" depends="rtd,instructor,boundless_rtd"/>
+  <target name="all" depends="rtd,learning,boundless_rtd,slides"
+          description="Build all themes for visual comparison."/>
   
   <target name="rtd" depends="init"
           description="Test html sphinx_rtd_theme (latested 0.41 release)">
@@ -27,7 +28,7 @@
         <param name="outdir" value="${build}/rtd/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/rtd/index.html"/>
+        <param name="file" value="${build}/rtd/workbook/index.html"/>
     </antcall>
   </target>
   
@@ -41,11 +42,11 @@
         <param name="outdir" value="${build}/html/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/html/index.html"/>
+        <param name="file" value="${build}/html/workbook/index.html"/>
     </antcall>
   </target>
   
-  <target name="instructor" depends="init"
+  <target name="learning" depends="init"
           description="Test workbook with learning_rtd_theme (as used by training team)">
     <echo>Building instructor for learning_rtd_theme...</echo>
     <antcall target="sphinx">
@@ -55,7 +56,7 @@
         <param name="outdir" value="${build}/workbook/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/workbook/index.html"/>
+        <param name="file" value="${build}/workbook/workbook/index.html"/>
     </antcall>
   </target>
 
@@ -69,7 +70,7 @@
         <param name="outdir" value="${build}/slides/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/slides/index.html"/>
+        <param name="file" value="${build}/slides/workbook/index.html"/>
     </antcall>
   </target>
 
@@ -83,7 +84,7 @@
         <param name="outdir" value="${build}/server/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/server/index.html"/>
+        <param name="file" value="${build}/server/workbook/index.html"/>
     </antcall>
   </target>
 
@@ -137,6 +138,7 @@
       <arg line="-W"/>
       <arg line="-b ${builder}"/>
       <arg line="-Dhtml_theme=${theme}"/>
+      <arg line="-Drst_epilog='.. |theme| replace:: ${theme}'"/>
       <arg line="-d ${build}/doctree"/>
       <arg path="${basedir}/src"/>
       <arg path="${outdir}"/>
