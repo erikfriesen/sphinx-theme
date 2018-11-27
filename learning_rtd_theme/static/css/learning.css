@@ -9,110 +9,109 @@ Author URI: http://boundlessgeo.com/resources/trainings/
 
 */
 
-code, pre {
-  font-family: 'Source Code Pro', Consolas, "Courier New", monospace;
+code, pre { font-family: 'Source Code Pro', Consolas, "Courier New", monospace; }
+
+.rst-content .admonition
+{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	padding-top: 1em;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 3px;
 }
 
-
-.rst-content .admonition {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  border: 1px solid #ccc;
-  background-color: #eee;
-  padding-top: 1em;
-  padding-bottom: 0px;
-  padding-left: 5px;
-  padding-right: 3px;
-}
-.rst-content .admonition-title {
-  font-family: "proxima-nova", helvetica, arial;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #29728c;
-  background: transparent;
-  padding-left: 10px;
-}
-.rst-content .admonition p, ol {
-  width: 90%;
-  padding-left: 15px;
-  padding-bottom: 5px;
+.rst-content .admonition-title
+{
+	font-family: "proxima-nova", helvetica, arial;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #29728c;
+	background: transparent;
+	padding-left: 10px;
 }
 
-.rst-content .admonition ol.section ul.simple li {
-  width: 90%;
+.rst-content .admonition p, ol
+{
+	width: 90%;
+	padding-left: 15px;
+	padding-bottom: 5px;
 }
 
-.rst-content .warning {
-  background-color: #ffe0e0;
+.rst-content .admonition ol.section ul.simple li { width: 90%; }
+.rst-content .warning { background-color: #ffe0e0; }
+.rst-content .warning .admonition-title { color: #dd0000; }
+
+.caption
+{
+	text-align: center;
+	margin-top: 15px;
+	color: #777;
+	font-size: 0.9em;
 }
 
-.rst-content .warning .admonition-title {
-  color: #dd0000;
+.rst-content .admonition p.caption
+{
+	width: 100%;
+	padding: 0;
 }
 
-.caption {
-  text-align: center;
-  margin-top: 15px;
-  color: #777;
-  font-size: 0.9em;
-}
-.rst-content .admonition p.caption {
-  width: 100%;
-  padding: 0;
-}
-.rst-content blockquote {
-  padding: 0;
+.rst-content blockquote { padding: 0; }
+.rst-content blockquote p, .admonition-instructor-notes { font-style: normal; }
+
+.rst-content .admonition-instructor-notes
+{
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	border: 1px solid #7DD5B2;
+	background-color: rgba(125, 213, 178, 0.2);
+	padding: 1em;
+	-webkit-box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
+	-moz-box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
+	box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
 }
 
-.rst-content blockquote p, .admonition-instructor-notes {
-  font-style: normal;
-}
-.rst-content .admonition-instructor-notes {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
-  border: 1px solid #7DD5B2;
-  background-color: rgb(125, 213, 178);
-  background-color: rgba(125, 213, 178, 0.2);
-  padding: 1em;
-  -webkit-box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
-  -moz-box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
-  box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
-}
-.rst-content .admonition-instructor-notes .admonition-title {
-  color: #000;
-  font-style: normal;
-  font-size: 1.5em;
-}
-.rst-content .admonition-instructor-notes .first {
-  font-weight: bold;
-}
-.rst-content .admonition-instructor-notes p {
-  font-size: 1em;
-  width: 100%;
+.rst-content .admonition-instructor-notes .admonition-title
+{
+	color: #000;
+	font-style: normal;
+	font-size: 1.5em;
 }
 
-.rst-content .admonition-instructor-notes ul li {
-  padding: 0 0 0.7em 0;
-  list-style-type: circle;
+.rst-content .admonition-instructor-notes .first { font-weight: bold; }
+
+.rst-content .admonition-instructor-notes p
+{
+	font-size: 1em;
+	width: 100%;
 }
 
-.rst-content .note {
-  background-color: #fcebc2;
-  -webkit-box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
-  -moz-box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
-  box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
+.rst-content .admonition-instructor-notes ul li
+{
+	padding: 0 0 0.7em 0;
+	list-style-type: circle;
 }
 
-.rst-content .note .admonition-title {
-  color: #333;
-  background: transparent;
+.rst-content .note
+{
+	background-color: #fcebc2;
+	-webkit-box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
+	-moz-box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
+	box-shadow: 5px 5px 3px 0px rgba(170,170,170,1);
 }
 
-.admonition > .note {
-  margin-left: 1em;
-  margin-right: 1em;
+.rst-content .note .admonition-title
+{
+	color: #333;
+	background: transparent;
 }
 
-.admonition-instructor-notes ol li {
-  padding: 0 0 0.7em 0;
+.admonition > .note
+{
+	margin-left: 1em;
+	margin-right: 1em;
 }
+
+.admonition-instructor-notes ol li { padding: 0 0 0.7em 0; }

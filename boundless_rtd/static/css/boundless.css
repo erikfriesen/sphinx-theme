@@ -1,6 +1,7 @@
 @import url(theme.css);
 
 /* Boundless Fonts */
+
 @font-face {
   font-family: "Proxima Nova";
   src: url("../fonts/proximanova-sbold-webfont.eot");
@@ -17,57 +18,76 @@
 }
 
 /** Use of Boundless Fonts */
-h1, h2, h3, h4, h5, h6, legend {
-  margin-top: 0;
-  font-weight: 700;
-  font-family: "Proxima Nova", "Montserrat", "Helvetica", Arial, sans-serif;
+h1, h2, h3, h4, h5, h6, legend
+{
+	margin-top: 0;
+	font-weight: 700;
+	font-family: "Proxima Nova", "Montserrat", "Helvetica", Arial, sans-serif;
 }
-.rst-content .sidebar .sidebar-title {
-  display: block;
-  font-family: "Proxima Nova", "Montserrat", "Helvetica", Arial, sans-serif;
-  font-weight: bold;
-  background: #e1e4e5;
-  padding: 6px 12px;
-  margin: -24px;
-  margin-bottom: 24px;
-  font-size: 100%;
+
+.rst-content .sidebar .sidebar-title
+{
+	display: block;
+	font-family: "Proxima Nova", "Montserrat", "Helvetica", Arial, sans-serif;
+	font-weight: bold;
+	background: #e1e4e5;
+	padding: 6px 12px;
+	margin: -24px;
+	margin-bottom: 24px;
+	font-size: 100%;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Proxima Nova", "Montserrat", "Helvetica", Arial, sans-serif;
-  font-weight: bold;
-  margin-top: 0.8em;
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: "Proxima Nova", "Montserrat", "Helvetica", Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 0.8em;
 }
 
 /** Boundless Logo */
-footer {
-  padding-top: 30px;
+footer { padding-top: 30px; }
+footer hr { margin: 24px 0 24px 0; }
+footer .info { display: inline-block; }
+
+footer .logo-link
+{
+	margin-bottom: 25px;
+	margin-right: 5px;
 }
-footer hr {
-  margin: 24px 0 24px 0;
+
+footer .logo-link .boundless-logo
+{
+	background: url("../img/boundless-logo-32.png") no-repeat;
+	height: 32px;
+	width: 32px;
+	display: inline-block;
 }
-footer .info {
-  display: inline-block;
+
+footer .copyright
+{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 6px;
 }
-footer .logo-link {
-  margin-bottom: 25px;
-  margin-right: 5px;
+
+footer .copyright .normal-text { color: #999999; }
+
+footer .footer-aside
+{
+	display: inline-block;
+	float: right;
+	padding-top: 6px;
 }
-footer .logo-link .boundless-logo {
-  background: url("../img/boundless-logo-32.png") no-repeat;
-  height: 32px;
-  width: 32px;
-  display: inline-block;
-}
-footer .copyright {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 6px;
-}
-footer .copyright .normal-text {
-  color: #999999;
-}
-footer .footer-aside {
-  display: inline-block;
-  float: right;
-  padding-top: 6px;
+
+div[class^="highlight"] pre
+{
+	white-space: pre;
+	margin: 0;
+	padding: 12px 12px;
+	font-family: "Source Code Pro", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	font-size: 12px;
+	line-height: 1.5;
+	display: block;
+	overflow: auto;
+	color: #333333;
 }
