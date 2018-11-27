@@ -12,7 +12,7 @@ For internal testing of |theme| themes.
      
          * `Sides <../slides/index.html>`__
 
-.. slide:: |theme| Test
+.. slide:: Sphinx Theme Test
    :level: 3
    :inline-contents: True
    
