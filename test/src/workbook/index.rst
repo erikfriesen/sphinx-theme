@@ -5,7 +5,7 @@ Workbook
    :theme: boundless_slides
    :autoslides: True
 
-Use of |theme| theme.
+Use of ``boundless_slides`` theme.
 
 Style Guidelines
 ================
@@ -13,7 +13,7 @@ Style Guidelines
 .. ifslides::
    
    Tone used when writing text.
-   
+
 .. ifnotslides::
 
    This section concerns the tone to use when writing text for pages.
@@ -176,7 +176,7 @@ Sphinx Inline Directives
 
 .. ifslides::
    
-   With examples for workbook consistency.
+   Directives with cut-and-paste examples.
 
 .. ifnotslides::
    
@@ -529,8 +529,8 @@ Sphinx Block Directives
 
 .. ifslides::
    
-   With examples for workbook consistency.
-   
+   Blocks used to organize content.
+
 .. ifnotslides::
    
    Second section on writing block directives, commonly used to orgnaize blocks of content.
