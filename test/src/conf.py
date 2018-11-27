@@ -118,7 +118,11 @@ html_theme = 'learning_rtd_theme'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+
+# theme options for server_rtd_theme
+# html_theme_options = {
+#    'display_connect': True #Ask a Question
+# }
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['../..']
@@ -186,14 +190,12 @@ htmlhelp_basename = "Test"
 
 slide_title = project
 
-autoslides = False
+autoslides = True
 slide_theme = 'boundless_slides'
 subtitle = 'Slide sub title'
 slide_footer = 'slide footer'
 slide_levels = 4
 slide_numbers = True
-# slide_theme_options = {'custom_css': 'boundless_slides.css'}
-
 
 # requires html and slides build
 slide_link_to_html = True
@@ -261,3 +263,8 @@ latex_elements = {
 
 # If false, no module index is generated.
 #latex_use_modindex = False
+
+# along with |release| |version| and |today|
+rst_epilog = """
+.. |theme| replace:: {theme}
+""".format(theme=html_theme)

@@ -5,14 +5,14 @@ Workbook
    :theme: boundless_slides
    :autoslides: True
 
-Use of ``slides`` theme.
+Use of ``boundless_slides`` theme.
 
 Style Guidelines
 ================
 
 .. ifslides::
    
-   Tone to use when writing.
+   Tone used when writing text.
 
 .. ifnotslides::
 
@@ -1078,7 +1078,7 @@ Combined with line highlighting to help direct exercises where configuration fil
 
    .. literalinclude:: files/airports.ysld
       :language: yaml
-      :emphasize-lines: 5-6
+      :emphasize-lines: 4-5
 
 Example:
 

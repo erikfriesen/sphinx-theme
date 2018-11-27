@@ -80,6 +80,8 @@ slide.html variable reference:
 * classes
 * slide_number
 * config
+* config.master_doc
+* config.html_short_title
 
 slide css styling guide:
 
@@ -93,6 +95,25 @@ notes on use of classes:
 
 * Could not get slide class ``title-image`` to work as documented
 * Add ``.. rst-class:: custom`` to provide a ``rst-custom`` class for use by CSS
+
+Example:
+
+```
+<h{{ level }}>{{ title }}</h{{ level }}>
+```
+
+## layout.html
+
+layout.html variable reference:
+
+* pagename
+* master_doc
+
+Example:
+
+```
+<a href="{{ pathto('index') }}#2">{{ title|e }}</a>
+```
 
 ## Reference
 

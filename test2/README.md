@@ -2,20 +2,47 @@
 
 This is an example of how to add boundless branding to a sphinx using custom css rather than a theme.
 
+In `config.py`:
+```
+slide_theme_options = {'custom_css': 'boundless_slides.css'}
+```
+
+For this to work section breaks are marked:
+
+```
+.. rst-class:: section
+```
+
+## Style Guidelines
+
+This allows the default `slides` and `single_level` slide themes to work out of the box without modification:
+
+```
+_static/boundless_slides.css
+_static/cover.png
+_static/backgroundblue.png
+_static/backgroundblueslide.png
+```
+
 ## Building
 
-Use ant for building, a target is setup for each theme:
-
+To try out the slide functionality:
 ```
-ant learning
-```
-
-```
-ant slides
+ant default
 ```
 
+To build `slides` with your choice of `html` theme:
+
 ```
-ant server
+ant slides learning
+```
+
+```
+ant slides server
+```
+
+```
+ant slides rtd
 ```
 
 PDF output requires pdflatex:

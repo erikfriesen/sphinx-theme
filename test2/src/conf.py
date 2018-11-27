@@ -186,7 +186,7 @@ htmlhelp_basename = "Test"
 
 slide_title = project
 
-autoslides = False
+autoslides = True
 slide_theme = 'slides'
 subtitle = 'Slide sub title'
 slide_footer = 'slide footer'

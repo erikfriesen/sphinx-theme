@@ -1,37 +1,78 @@
 @import url(slides.css);
 
-.slides > article {
-    background-color: #f2f2f2;
+.slides > article
+{
+	background-color: #f2f2f2;
+	font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.slides > article.level-1 {
-    color: white;
-    background-image: url("cover.png");
-    background-repeat: no-repeat;
-    background-color: #2A728E;
-}
-.slides > article.level-1 h1 {
-    color: white;
-}
-
-.slides > article.level-2 {
-    color: white;
-    background-image:  url("backgroundblueslide.png"), url("backgroundblue.png");
-    background-repeat: no-repeat, repeat;
-    background-size: 80%, 50%;
-    background-position: center;
-    background-color: #2A728E;
+.slides > article
+{
+	color: rgb(102, 102, 102);
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	font-size: 1em;
+	line-height: 1.2em;
+	letter-spacing: -1px;
 }
 
-.slides > article.level-2 h2 {
-    color: white;
-    margin-top: 250px;
-    margin-left: 50px;
-    margin-right: 50px;
+/* title page */
+.slides > article.level-1
+{
+	color: white;
+	background-image: url("cover.png");
+	background-repeat: no-repeat;
+	background-color: #2A728E;
 }
 
-.slides > article.level-2 p {
-    color: white;
-    margin-left: 50px;
-    margin-right: 50px;
+.slides > article.level-1 h1 { color: white; }
+.slides > article.level-1 > p > code { color: white; }
+
+/* section page */
+.slides > article.level-2
+{
+	color: white;
+	background-image: url("backgroundblueslide.png"), url("backgroundblue.png");
+	background-repeat: no-repeat, repeat;
+	background-size: 80%, 50%;
+	background-position: center;
+	background-color: #2A728E;
+}
+
+.slides > article.level-2 h2
+{
+	color: white;
+	margin-top: 0px;
+	margin: 250px 50px 0px 50px;
+}
+
+.slides > article.level-2 p
+{
+	color: white;
+	margin: 20px 50px 0px 50px;
+}
+
+.slides > article.level-2 > code { color: white; }
+
+/** code examples */
+code, .rst-content tt { font-family: "Source Code Pro", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
+
+div[class^='highlight'] pre
+{
+	white-space: pre;
+	margin: 0;
+	padding: 12px 12px;
+	font-family: "Source Code Pro", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	font-size: 12px;
+	line-height: 1.5;
+	display: block;
+	overflow: auto;
+	color: #333333;
+}
+
+.container-header
+{
+	top: 1ex;
+	left: 30px;
+	font-size: 66%;
+	position: relative;
 }
