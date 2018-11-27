@@ -127,16 +127,27 @@
     <a href="{{ pathto(master_doc) }}">
     <img src="{{ pathto('_static/' + logo, 1) }}" class="logo" alt="{{project}}"/>
     </a>
-  {% endif %}
-  
+  {% endif %}  
   {% if pagename == master_doc %}
     {{ docstitle|e }}
   {% else %}
-    <a href="../index.html#2">{{ docstitle|e }}</a>
+    {% if pathto(pagename, 1) == 'index' %}
+      <a href="../index.html#2">{{ docstitle|e }}</a>
+    {% else %}
+      <a href="index.html#2">{{ docstitle|e }}</a>
+    {% endif %}
   {% endif %}
 </div>
 
 {% block body %} {% endblock %}
+{#
+pagename = {{pagename}}, 
+master_doc = {{master_doc}},
+pathto = {{ pathto(pagename, 1) }},
+parents = {{parents}}
+pagename == master_doc = {{pagename == master_doc}},
+pagename == 'index' = {{pagename == 'index'}}
+#}
 </section>
 
 <section id="slide_notes">
