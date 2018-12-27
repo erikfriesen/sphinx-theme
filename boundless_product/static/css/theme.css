@@ -5665,3 +5665,8 @@ footer .footer-aside {
 ul.search li img {
   width: auto !important;
 }
+
+a.reference.external::after {
+  font-family: 'FontAwesome';
+  content: " \f08e";
+}
