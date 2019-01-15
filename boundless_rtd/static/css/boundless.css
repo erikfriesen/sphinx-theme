@@ -91,3 +91,8 @@ div[class^="highlight"] pre
 	overflow: auto;
 	color: #333333;
 }
+
+a.reference.external::after {
+  font-family: 'FontAwesome';
+  content: " \f08e";
+}
