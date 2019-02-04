@@ -143,6 +143,15 @@
       <arg path="${basedir}/src"/>
       <arg path="${outdir}"/>
     </exec>
+    <!-- fix external links -->
+    <echo>Clean up external links in ${outdir}</echo>
+    <replace dir="${outdir}">
+       <include name="**/*.html"/>
+       <replacefilter token="class=&quot;reference external&quot;"
+                      value="class=&quot;reference external&quot; target=&quot;_blank&quot;"/>
+       <replacefilter token="class=&quot;reference download internal&quot;"
+                      value="class=&quot;reference download internal&quot; target=&quot;_blank&quot;"/>
+    </replace>
   </target>
   
   <!-- Used to display generated file at end of task -->
