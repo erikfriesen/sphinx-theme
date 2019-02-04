@@ -120,9 +120,9 @@ html_theme = 'learning_rtd_theme'
 # documentation.
 
 # theme options for server_rtd_theme
-# html_theme_options = {
-#    'display_connect': True #Ask a Question
-# }
+html_theme_options = {
+    'display_version': False # No version number
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['../..']

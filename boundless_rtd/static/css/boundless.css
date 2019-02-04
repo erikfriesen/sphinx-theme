@@ -92,7 +92,22 @@ div[class^="highlight"] pre
 	color: #333333;
 }
 
-a.reference.external::after {
-  font-family: 'FontAwesome';
-  content: " \f08e";
+a.reference.external::after
+{
+	font-family: 'FontAwesome';
+	content: " \f08e";
+}
+
+/** override theme.css layout */
+.wy-nav-content
+{
+	max-width: unset;
+	/* use 100% width */
+}
+
+.wy-side-nav-search
+{
+	margin-bottom: unset;
+	padding-bottom: unset;
+	background-color: #28728d;
 }

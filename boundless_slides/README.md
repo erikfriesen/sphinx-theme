@@ -30,7 +30,8 @@ The ``section`` text provides a white heading on dark background.
 * fonts:
   
   * headings: Proxa Nova is bundled with theme, with Lato as fallback
-  * code: Source Code is used for code examples
+  * text: 'Lato', sans-serif
+  * code: "Source Code Pro", Droid, monospace
   
 * sections:
   
