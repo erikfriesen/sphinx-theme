@@ -121,7 +121,9 @@ html_theme = 'learning_rtd_theme'
 
 # theme options for server_rtd_theme
 html_theme_options = {
-    'display_version': False # No version number
+    'display_version': False, # No version number
+    'prev_next_buttons_location': 'none', # use sidebar to navigate
+    'display_connect': False
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

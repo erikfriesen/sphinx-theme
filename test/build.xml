@@ -100,7 +100,6 @@
       <arg line="-q"/>
       <arg line="-b latex"/>
       <arg line="-d ${build}/doctree"/>
-      <arg line="-A coursename='Sphinx Test'"/>
       <arg path="${basedir}/src"/>
       <arg path="${build}/latex/"/>
     </exec>
@@ -138,6 +137,7 @@
       <arg line="-W"/>
       <arg line="-b ${builder}"/>
       <arg line="-Dhtml_theme=${theme}"/>
+      <arg line="-A theme_coursename='Course Title'"/>
       <arg line="-Drst_epilog='.. |theme| replace:: ${theme}'"/>
       <arg line="-d ${build}/doctree"/>
       <arg path="${basedir}/src"/>
