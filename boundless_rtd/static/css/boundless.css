@@ -178,3 +178,35 @@ a.reference.external::after
 	  padding: 2.4px 6px;
 	  margin: auto 2px;
 }
+
+/** Color schemes for admonitions **/
+/* Color scheme for explore admonition */
+/* title bar */
+div.admonition-explore > p.admonition-title
+{
+    background-color: #2a728e;
+}
+
+/* Color scheme for challenge admonition */
+/* body */
+div.admonition-challenge.admonition
+{
+    background: #e1f7f3;
+}
+/* title bar */
+div.admonition-challenge > p.admonition-title
+{
+    background-color: #00a78d;
+}
+
+/* Color scheme for instructor notes admonition */
+/* body */
+div.admonition-instructor-notes.admonition
+{
+    background: #ffd8c1;
+}
+/* title bar */
+div.admonition-instructor-notes > p.admonition-title
+{
+    background-color: #f58d50;
+}
