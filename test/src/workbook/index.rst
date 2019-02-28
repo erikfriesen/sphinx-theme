@@ -766,7 +766,7 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
    
    .. nextslide:: Comparing WMS Versions
    
-   .. admonition:: Explore
+   .. admonition:: Explore difference between CRS:84 and EPSG:4326
 
       What is the difference between the ``CRS:84`` and ``EPSG:4326``
       spatial reference systems?
@@ -775,7 +775,7 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
       
          .. include:: explore_crs84.txt
    
-   .. admonition:: Challenge
+   .. admonition:: Challenge WMS GetMap use
       
       Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
       
@@ -783,24 +783,26 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
          
          * For background compare OGC WMS specification with the results produced by :command:`GeoServer`.
 
+.. rst-class:: exercise
+
 .. nextslide:: Comparing WMS Versions
 
 .. ifslides::
 
-   .. admonition:: Explore
+   .. admonition:: Explore difference between CRS:84 and EPSG:4326
 
       What is the difference between the ``CRS:84`` and ``EPSG:4326``
       spatial reference systems?
   
-   .. admonition:: Challenge
+   .. admonition:: Challenge WMS GetMap use 
   
-      Do you expect ``CRS:84`` to work with a WFS 1.0.0 GetMap Request?
+      Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
 
 .. ifnotslides::
 
    .. admonition:: Example use of admonition for exercises
 
-      .. admonition:: Explore
+      .. admonition:: Explore difference between CRS:84 and EPSG:4326
 
          What is the difference between the ``CRS:84`` and ``EPSG:4326``
          spatial reference systems?
@@ -809,9 +811,9 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
          #. Download the WMS 1.3.0 specification from the OGC website for the definition of ``CRS:84``
          #. You may wish to compare the generated layer bounds for both ``CRS:84`` and ``EPSG:4326``.
       
-      .. admonition:: Challenge
+      .. admonition:: Challenge WMS GetMap use
       
-         Do you expect ``CRS:84`` to work with a WFS 1.0.0 GetMap Request?
+         Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
          
          * For background compare OGC WMS specification with the results produced by :command:`GeoServer`.
 
@@ -889,7 +891,7 @@ For images, use the ``figure`` directive and add a caption. Place the image file
 
    .. admonition:: Example image
    
-      .. figure: img/boundless_desktop_install.png
+      .. figure:: img/boundless_desktop_install.png
 
          Boundless Desktop Setup installing
 
@@ -905,7 +907,7 @@ Directory structure:
 
    * - :file:`src/section/index.rst`
      - section being written
-   * - :file:`src/section/img/``
+   * - :file:`src/section/img/`
      - images and screen shots used in section/index.rst above
    * - :file:`src/index.rst`
      - start of module
