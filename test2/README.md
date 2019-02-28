@@ -1,6 +1,6 @@
 # Slide Custom CSS example
 
-This is an example of how to add boundless branding to a sphinx using custom css rather than a theme.
+This is an example of how to add boundless slide branding to a sphinx using custom css in the project (rather than a theme).
 
 In `config.py`:
 ```
