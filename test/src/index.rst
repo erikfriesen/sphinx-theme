@@ -21,4 +21,5 @@ For internal testing of |theme| themes.
       :caption: Contents
 
       welcome
+      style/index
       workbook/index

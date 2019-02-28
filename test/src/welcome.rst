@@ -6,7 +6,9 @@ Welcome
    :theme: boundless_single
    :autoslides: True
 
-Use of ``boundless_single`` theme.
+.. ifslides::
+   
+   Theme ``boundless_single``
 
 Overview
 --------
