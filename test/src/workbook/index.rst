@@ -5,171 +5,9 @@ Workbook
    :theme: boundless_slides
    :autoslides: True
 
-Use of ``boundless_slides`` theme.
-
-Style Guidelines
-================
-
 .. ifslides::
    
-   Tone used when writing text.
-
-.. ifnotslides::
-
-   This section concerns the tone to use when writing text for pages.
-
-   These writing guidelines are compatible with the writing style of Boundless Server, which are extension of the GeoServer `Documentation Guide <http://docs.geoserver.org/latest/en/docguide/style.html>`__ instructions.
-
-   This section concerns the tone to use when writing text for pages.
-
-.. ifnotslides::
-
-   Reference:
-
-   * :server:`Boundless Server User Manual <>`
-   * `Style Guidelines <http://docs.geoserver.org/latest/en/docguide/style.html>`__ (GeoServer Documentation Guide)
-
-Be concise
-----------
-
-Style guide: *Documentation should be concise and not just a brain dump. Reference material should contain short pages and be easy to refer to without having to scroll through a large volume of text.  Tutorials can be longer, depending on scope.  If the point of the document is to share your thoughts and insights, it belongs in a blog post.  This documentation is a manual, not a wiki.*
-
-.. nextslide::
-   :increment:
-
-For training materials we fall under "tutorials". Concise writing, with the understanding that understand that repetition, and taking multiple perspectives on the same subject matter, is required to communicate key ideas.
-
-* For key ideas we often looking to communicate through a) text b) diagram c) hands-on step-by-step instructions.
-
-* Consider to how to communicate the idea using both GIS professional terms, and IT professional terms.
-
-Avoid marketing
----------------
-
-Style guide: *If the point of the document is to showcase a new feature it does not belong in the documentation. Write an article or a blog post about it. If it is necessary to point out a technical benefit of a feature then do so from a technical standpoint.*
-
-Bad
-   Super-overlays are a great way to publish super cool datasets awesomely in Google Earth!
-Good
-   Super-overlays allow you to efficiently publish data via Google Earth.
-
-.. nextslide::
-   :increment:
-
-Training is in-between marketing and documentation and marketing.
-
-Many attending our instruction are being introduced to the product for the first time and we have a goal to entertain and get attendees excited about the technology and how it can be applied in their organization.
-
-Guidance: Please leave feature-promotion to the description of the technology, and instructor notes. Needless verbiage, however enthusiastic, should not distrupt from step by step instructions.
-
-Be professional
----------------
-
-Style Guide: *Avoid the use of slang or other "colorful" language. The point of a technical document is to be informative, not to keep the reader amused.  Avoiding slang helps keep the document accessible to as large an audience as possible.*
-
-Bad
-   Next, fire up whatever tool you use to browse the web and point it in the direction of ...
-Good
-   Next, start your web browser and navigate to ...
-
-.. nextslide::
-   :increment:
-
-Guidance: This is a difficult a difficult balance for training material, when teaching internationally simple consistent professional langague works best. If you have a some a colorful story, or description, please add as an instructor notes.
-
-Use direct commands
--------------------
-
-Style Guide: *When providing step-by-step instructions, use direct commands or requests. Avoid the use of "we" and "let's".*
-
-Bad
-   Now let's add a shapefile by ...
-Good
-   Add a shapefile by ...
-
-Naming conventions
-------------------
-
-Reference:
-
-* `Wikipedia naming conventions <http://en.wikipedia.org/wiki/Wikipedia:Naming_conventions>`_.
-
-.. nextslide:: Naming: Capitalization of page names
-
-Capitalization of page names: Each word in the page name should be capitalized except for articles (such as "the", "a", "an") and conjunctions (such as "and", "but", "or"). A page name should never start with an article.
-
-Bad
-   Adding a shapefile or postgis table
-Good
-   Adding a Shapefile or PostGIS Table
-
-Bad
-   The Shapefile Tutorial
-Good
-   Shapefile Tutorial
-
-.. nextslide:: Naming: Capitalization of section names
-
-Capitalization of section names: Do not capitalize second and subsequent words unless the title is almost always capitalized in English (like proper names). Thus, capitalize John Wayne and Art Nouveau, but not Video Games.
-
-Bad
-   Creating a New Datastore
-Good
-   Creating a new datastore
-
-.. nextslide:: Naming: Verb usage
-
-Verb usage: It is recommended that the gerund (the -ing form in English) be used unless there is a more common noun form. For example, an article on swimming is better than one on swim.
-
-Bad
-   Create a new datastore
-Good
-   Creating a new datastore
-
-.. nextslide:: Naming: Avoid plurals
-
-Avoid plurals: Create page titles that are in the singular.  Exceptions to this are nouns that are always plural (scissors, trousers), a small class that requires a plural (polar coordinates, Bantu languages, The Beatles).
-
-Bad
-   Templates tutorial
-Good
-   Template tutorial
-
-Formatting
-----------
-
-Any code or command line snippets should be formatted as code::
-
-   This is a code block.
-
-When considering PDF output we have some hard limitations on lines are longer than 77 characters. Please use multiple lines in a format appropriate for the language in use.
-
-If possible, snippets should be functional when pasted directly into the appropriate target.
-
-.. nextslide::
-   :increment:
-
-For example, Java and XML make no distinction between a single space and multiple spaces, so the following snippets are fine::
-
-   org.geoserver.package.Object someVeryLongIdentifier =
-      org.geoserver.package.Object.factoryMethod();
-
-::
-
-   <namespace:tagname attributename="attributevalue"
-      attribute2="attributevalue" nextattribute="this is on another line"/>
-
-.. nextslide::
-   :increment:
-
-For shell scripts, new lines can be escaped with a backslash character :kbd:`\\`. It is also recommended to use a simple ``$`` prompt to save space. For example::
-
-   $ /org/jdk1.5.0*/bin/java \
-      -cp /home/user/.m2/repository/org/geoserver/*/*.jar \
-      org.geoserver.GeoServer \
-      -DGEOSERVER_DATA_DIR=/var/lib/geoserver_data/release
-
-For windows commands, characters can be escaped with a :kbd:`^` character, but it is so unusual that it is not recommended.
+   Theme ``boundless_slides``
 
 Sphinx Inline Directives
 ========================
@@ -242,6 +80,7 @@ Inline literal
 Use inline literals to name layers, tables, and columns. This is do to avoid possibility of error when copying these texts into queries, configurations or requests.
 
 .. code-block:: rst
+   :linenos:
    
    Select the ``name`` column in the ``nyc_streets`` table.
 
@@ -255,11 +94,13 @@ Reference commands and applications
 Reference commands (such as :command:`pgsql`) with the following syntax:
 
 .. code-block:: rst
+   :linenos:
 
    Use :command:`pgAdmin` to administration applications to connect
    to the PostgresSQL server running on localhost.
 
 .. code-block:: rst
+   :linenos:
 
    Alternatively use :command:`psql` interactive session:
 
@@ -267,14 +108,21 @@ Reference commands (such as :command:`pgsql`) with the following syntax:
 
       psql -U postgres nyc
 
-Reference an label or button in a user interface
-------------------------------------------------
+Reference a label or button in a user interface
+-----------------------------------------------
 
 Use :command:`guilabel` to direct a user to click a link or look to a certain area of the GUI:
 
 .. code-block:: rst
+   :linenos:
 
    #. Click :guilabel:`View connection details` to open the :guilabel:`PostGIS connection` information.
+
+.. ifnotslides::
+
+   .. admonition:: Example use of ``guilabel``
+      
+      #. Click :guilabel:`View connection details` to open the :guilabel:`PostGIS connection` information.
 
 Menu or user interface traversal
 --------------------------------
@@ -282,22 +130,34 @@ Menu or user interface traversal
 Direct a user through a menubar with the following syntax:
 
 .. code-block:: rst
+   :linenos:
 
-   :menuselection:`Start Menu --> Programs --> GeoServer`
+   Launch :menuselection:`Start Menu --> Programs --> GeoServer`
 
-This will output :menuselection:`Start Menu --> Programs --> GeoServer`.
+.. ifnotslides::
+
+   .. admonition:: Example use of ``menuselection``
+
+      Launch :menuselection:`Start Menu --> Programs --> GeoServer`.
 
 .. nextslide::
    :increment:
 
 Consistently refer to:
 
-* :guilabel:`menubar` for the application or window menubar
-* :guilabel:`toolbar` for the application or window toolbar
+* *menubar* for the application or window menubar
+* *toolbar* for the application or window toolbar
 
 .. code-block:: rst
+   :linenos:
 
    #. From the :guilabel:`DB Manager` menubar select :menuselection:`Table --> Import layer/file`.
+
+.. ifnotslides::
+
+   .. admonition:: Example menubar use
+   
+      #. From the :guilabel:`DB Manager` menubar select :menuselection:`Table --> Import layer/file`.
 
 .. nextslide::
    :increment:
@@ -305,10 +165,19 @@ Consistently refer to:
 This approach also works for user interface traversal:
 
 .. code-block:: rst
+   :linenos:
 
    #. With :guilabel:`Databases` selected in the browser select
       :menuselection:`Object --> Create --> Database` to open
       the :guilabel:`Create Database` dialog.
+
+.. ifnotslides::
+
+   .. admonition:: Example user interface traversal
+
+      #. With :guilabel:`Databases` selected in the browser select
+         :menuselection:`Object --> Create --> Database` to open
+         the :guilabel:`Create Database` dialog.
 
 File Paths
 ----------
@@ -316,25 +185,35 @@ File Paths
 To refer to files or paths:
 
 .. code-block:: rst
+   :linenos:
 
    :file:`file.txt`
    :file:`/var/lib/opengeo/geoserver/`
    :file:`C:\\ProgramData\\Boundless\\Server\GeoServer\\data`
 
-Example:
+.. ifnotslides::
 
-| :file:`file.txt`
-| :file:`/var/lib/opengeo/geoserver/`
-| :file:`C:\\ProgramData\\Boundless\\Server\GeoServer\\data`
+   .. admonition:: Example use of ``file``
+
+      | :file:`file.txt`
+      | :file:`/var/lib/opengeo/geoserver/`
+      | :file:`C:\\ProgramData\\Boundless\\Server\GeoServer\\data`
 
 .. nextslide::
    :increment:
 
-Use the following syntax to reference files and paths::
+Use the following syntax to reference files and paths:
 
-   :file:`myfile.txt`
+.. code-block:: rst
+   :linenos:
 
-This will output: :file:`myfile.txt`.
+   Create :file:`myfile.txt`
+
+.. ifnotslides::
+
+   .. admonition:: Example file reference
+   
+      Create :file:`myfile.txt`.
 
 .. nextslide::
    :increment:
@@ -342,10 +221,15 @@ This will output: :file:`myfile.txt`.
 You can reference paths in the same way:
 
 .. code-block:: rst
+   :linenos:
 
-   :file:`path/to/myfile.txt`
+   Navigate to :file:`path/to/mydirectory`.
 
-This will output: :file:`path/to/myfile.txt`.
+.. ifnotslides::
+
+   .. admonition:: Example path reference
+   
+      Navigate to :file:`path/to/mydirectory`.
 
 .. nextslide::
    :increment:
@@ -353,10 +237,15 @@ This will output: :file:`path/to/myfile.txt`.
 For Windows paths, use double backslashes:
 
 .. code-block:: rst
+   :linenos:
 
-   :file:`C:\\myfile.txt`
+   Use :command:`Notepad` to open :file:`C:\\myfile.txt`.
 
-This will output: :file:`C:\\myfile.txt`.
+.. ifnotslides::
+
+   .. admonition:: Example windows path
+      
+      Use :command:`Notepad` to open :file:`C:\\myfile.txt`.
 
 .. nextslide::
    :increment:
@@ -364,11 +253,15 @@ This will output: :file:`C:\\myfile.txt`.
 If you want to reference a non-specific path or file name:
 
 .. code-block:: rst
+   :linenos:
 
-   :file:`{your/own/path/to}/myfile.txt`
+   Save changes to :file:`{your/own/path/to}/myfile.txt`
 
-This will output: :file:`{your/own/path/to}/myfile.txt`
+.. ifnotslides::
 
+   .. admonition:: Example file placeholder
+      
+      Save changes to :file:`{your/own/path/to}/myfile.txt`
 
 URL Links
 ---------
@@ -376,20 +269,30 @@ URL Links
 URLs included in text are recognized and show up as links.
 
 .. code-block:: rst
-
+   :linenos:
+   
    http://sphinx-doc.org/rest.html
 
+.. ifnotslides::
+   
+   .. admonition:: Example URL reference
+      
+       http://sphinx-doc.org/rest.html
+   
 Adding a URL to text can be done as follows.
 
 .. code-block:: rst
-
-   `reStructured Text Primer <http://sphinx-doc.org/rest.html>`_
-
-To avoid a duplicate URL error when a URL is used a second time on a different page:
-
-.. code-block:: rst
-
+   :linenos:
+   
    `reStructured Text Primer <http://sphinx-doc.org/rest.html>`__
+
+.. ifnotslides::
+   
+   .. admonition:: Example text link
+   
+      `reStructured Text Primer <http://sphinx-doc.org/rest.html>`__
+   
+Note the use of `__` to create an anonymous reference, this avoids a duplicate URL error when a URL is used a second time on a different page.
 
 .. nextslide::
    :increment:
@@ -397,7 +300,8 @@ To avoid a duplicate URL error when a URL is used a second time on a different p
 Avoid separating out references (as shown below) as it is confusing:
 
 .. code-block:: rst
-
+   :linenos:
+   
    `reStructured Text Primer`_
 
    .. _reStructured Text Primer: http://sphinx-doc.org/rest.html
@@ -406,118 +310,176 @@ Avoid separating out references (as shown below) as it is confusing:
 File Downloads
 --------------
 
-Text snippets, large blocks of downloadable code, and even zip files or other binary sources can all be included as part of the documentation.  To include files as part of the build process, use the following syntax:
+Text snippets, large blocks of downloadable code, and even zip files or other binary sources can all be included as part of the documentation.  
+
+.. ifnotslides:: To include files as part of the build process, use the following syntax:
 
 .. nextslide:: Download
 
 Use ``download`` directives to include configuration files and icons in the workbook.
 
 .. code-block:: rst
-
+   :linenos:
+   
    #. First, download this airports style
       (:download:`airports.sld <files/airports.sld>`)
       to your host system.
 
       .. note:: You can right-click or Ctrl-click (OS X) the above file name to save it.
 
-Example:
+.. ifnotslides::
+   
+   .. admonition:: Example file download
 
-3. First, download this airports style
-   (:download:`airports.sld <files/airports.sld>`)
-   to your host system.
+      3. First, download this airports style
+         (:download:`airports.sld <files/airports.sld>`)
+         to your host system.
 
-   .. note:: You can right-click or Ctrl-click (OS X) the above file name to save it.
+         .. note:: You can right-click or Ctrl-click (OS X) the above file name to save it.
 
 
 External Links
------------------------------
+--------------
 
 We have enabled the external link extension in :file:`configy.py`.
 
-For this workbook we defined:
+For this workbook defined:
 
 .. code-block:: python
-
+   :lineno-start: 84
+   
    extlinks = {
     'sphinx': ('http://www.sphinx-doc.org/en/master/%s',''),
      ...
    }
 
+.. nextslide::
+
 Allowing any sphinx documentation page to be referenced as an external link:
 
 .. code-block:: rst
+   :linenos:
+   
+   Reference:
+   
+   * :sphinx:`reStructured Text Primer <rest.html>`
+   
+.. ifnotslides::
+   
+   .. admonition:: Example external link
+      
+      Reference:
+      
+      * :sphinx:`reStructured Text Primer <rest.html>`
+   
+.. ifnotslides::
 
-   :sphinx:`reStructured Text Primer <rest.html>`
+This approach is used for all documentation references.
 
-.. nextslide::
-   :increment:
-
-This approach is used for all documentation references:
+.. nextslide:: Boundless Server External Links
 
 * server - latest boundless server docs
-
-  .. code-block:: rst
-
-     * :server:`Boundless Server <index.html>`
-     * :server:`Installing Boundless Server on Windows <install/windows/index.html>`
+  
+  .. ifnotslides::
+  
+     .. code-block:: rst
+        :linenos:
+    
+        Reference:
+    
+        * :server:`Boundless Server <index.html>`
+        * :server:`Installing Boundless Server on Windows <install/windows/index.html>`
 
 * geoserver - geoserver user manual, matching boundless server
 
-  .. code-block:: rst
+  .. ifnotslides::
+  
+     .. code-block:: rst
+        :linenos:
 
-     * :geoserver:`GeoServer Users Manual <index.html>`
-     * :geoserver:`GeoServer Styling Workshop <styling/workshop/index.html>` (GeoServer Users Manual)
+        Reference:
+    
+        * :geoserver:`GeoServer Users Manual <index.html>`
+        * :geoserver:`GeoServer Styling Workshop <styling/workshop/index.html>` (GeoServer Users Manual)
 
 * postgresql - latest postgresql manual
 
-  .. code-block:: rst
-
-     * :postgresql:`PostgerSQL Manual <index.html>`
-     * :postgresql:`createdb <app-createdb.html>`
-     * :postgresql:`CREATE EXTENSION <sql-createextension.html>` - add an extension to the current database
-     * :postgresql:`CREATE INDEX <sql-createindex.html>`
+  .. ifnotslides::
+  
+     .. code-block:: rst
+        :linenos:
+     
+        Reference:
+     
+        * :postgresql:`PostgerSQL Manual <index.html>`
+        * :postgresql:`createdb <app-createdb.html>`
+        * :postgresql:`CREATE EXTENSION <sql-createextension.html>` - add an extension to the current database
+        * :postgresql:`CREATE INDEX <sql-createindex.html>`
 
 * postgis - latest postgis manual
 
-  .. code-block:: rst
+  .. ifnotslides::
+ 
+     .. code-block:: rst
+        :linenos:
+    
+        Reference:
+    
+        * :postgis:`PostGIS Manual <index.html>`
+        * :postgis:`Creating a spatial database using EXTENSIONS <postgis_installation.html#create_new_db_extensions>`
 
-     * :postgis:`PostGIS Manual <index.html>`
-     * :postgis:`Creating a spatial database using EXTENSIONS <postgis_installation.html#create_new_db_extensions>`
+.. nextslide:: Boundless Desktop External Links
 
 * desktop - boundless desktop docs
 * qgis
 * pgadmin
 * gdal - for gdal command references
 * ogr - to link to ogr command references
+
+.. nextslide:: Boundless Learning External Links
+
 * training-files - used to reference downloads associated with training materials
 
-  .. code-block:: rst
-
-     Download from the following link: :training-files:`data bundle <postgis/postgis-workshop.zip>`
+  .. ifnotslides::
+  
+     .. code-block:: rst
+        :linenos:
+     
+        Download from the following link: :training-files:`data bundle <postgis/postgis-workshop.zip>`
 
 * connect
 * learning-center - LMS location
+
+.. nextslide:: Issue Trackers
 
 Less commonly used:
 
 * geos - geoserver bug ticket
 
-  .. code-block:: rst
-
-     For more information, please see the JIRA issue :geos:`GEOS-7917 <GEOS-7917>`.
+  .. ifnotslides::
+  
+     .. code-block:: rst
+        :linenos:
+     
+        For more information, please see the JIRA issue :geos:`GEOS-7917 <GEOS-7917>`.
 
 * geot - geotools bug ticket
 
-We pull these out as external links because the location of the latest docs changes over time.
+.. nextslide:: Custom External Links
+
+We pull these out as external links because the location of the latest docs changes over time:
 
 * It also gives us the option of generating out the docs with references to docs on localhost for off-line use.
 
 * These may be configured to use docs.boundlessgeo.com (rather than community website).
 
+.. nextslide::
+
 Although we have pulled the above definitions out into a shared :file:`conf.py` file, you can add to the list using:
 
 .. code-block:: python
-
+  :lineno-start: 47
+     
    # External links
    extlinks = global_conf.extlinks
    extlinks.update({
@@ -533,7 +495,7 @@ Sphinx Block Directives
 
 .. ifnotslides::
    
-   Second section on writing block directives, commonly used to orgnaize blocks of content.
+   Second section on writing block directives, used to orgnaize blocks of content.
 
    Reference:
 
@@ -544,36 +506,50 @@ Block Directives
 
 Block directives are more commonly used to organize blocks of content:
 
-.. code-block:: rst
+* Use spaces, not tabs for indenting
+* Align text with start of the directive
 
+.. code-block:: rst
+   :linenos:
+     
    .. pull-quote::
 
       OGC(R) standards are technical documents that detail interfaces or encodings.
 
       -- Open Geospatial Consortium
 
-* Use spaces, not tabs for indenting
-* Align text with start of the directive
+.. ifnotslides::
+   
+   .. admonition:: Example pull-quote 
+      
+      .. pull-quote::
+         
+         OGC(R) standards are technical documents that detail interfaces or encodings.
+         
+         -- Open Geospatial Consortium
 
 Comments
 --------
 
 .. code-block:: rst
-
+   :linenos:
+   
    .. this is a comment that does not appear in the generated workbook
 
 .. code-block:: rst
-
+   :linenos:
+   
    ..
       multi line comments
       are supported
 
-.. nextslide::
+.. nextslide:: Comments - Hot Tip!
 
-directives always end with ``::``, you can quickly "comment out" a working directive:
+Directives always end with ``::``, you can quickly "comment out" a working directive:
 
 .. code-block:: rst
-
+   :linenos:
+    
    .. code-block:: shell
 
       $ tail -f *
@@ -581,6 +557,7 @@ directives always end with ``::``, you can quickly "comment out" a working direc
 By chaning to a single ``:``, turning this code example in a hidden comment:
 
 .. code-block:: rst
+   :linenos:
    :emphasize-lines: 1
 
    .. code-block: shell
@@ -593,38 +570,45 @@ Lists
 There are two types of lists, bulleted lists and numbered lists.  A **bulleted list** is accomplished using:
 
 .. code-block:: rst
-
+   :linenos:
+   
    * An item
    * Another item
    * Yet another item
 
-Bulleted list example:
+.. ifnotslides::
+   
+   .. admonition:: Example bulleted list 
 
-* An item
-* Another item
-* Yet another item
+      * An item
+      * Another item
+      * Yet another item
 
 .. nextslide:: Number List
 
 A **numbered list**:
 
 .. code-block:: rst
-
+   :linenos:
+   
    #. First item
    #. Second item
    #. Third item
 
-Numbered-list example:
+.. ifnotslides::
+   
+   .. admonition:: Example numbered-list 
 
-#. First item
-#. Second item
-#. Third item
+      #. First item
+      #. Second item
+      #. Third item
 
 .. nextslide::
 
 Numbers are automatically generated, making it easy to add/remove items.
 
-Double check the generated numbering, occasionally if you get the indenting wrong the list will restart at one throwing your instructions off.
+
+.. warning:: Double check the generated numbering, occasionally if you get the indenting wrong the list will restart at one throwing your instructions off.
 
 List tables
 -----------
@@ -632,7 +616,8 @@ List tables
 Bulleted lists can sometimes be cumbersome and hard to follow.  When dealing with a long list of items, use list-tables.  For example, to talk about a list of options, create a table that looks like this:
 
 .. code-block:: rst
-
+   :linenos:
+   
    .. list-table::
       :widths: 20 80
       :header-rows: 1
@@ -644,27 +629,28 @@ Bulleted lists can sometimes be cumbersome and hard to follow.  When dealing wit
       * - Rectangle
         - Four sides, 90 degree angles
 
-.. nextslide:: List Table
+.. ifnotslides::
+   
+   .. admonition:: Example list table
 
-List table example
+      .. list-table::
+         :widths: 20 80
+         :header-rows: 1
 
-.. list-table::
-   :widths: 20 80
-   :header-rows: 1
-
-   * - Shapes
-     - Description
-   * - Square
-     - Four sides of equal length, 90 degree angles
-   * - Rectangle
-     - Four sides, 90 degree angles
+         * - Shapes
+           - Description
+         * - Square
+           - Four sides of equal length, 90 degree angles
+         * - Rectangle
+           - Four sides, 90 degree angles
 
 .. nextslide:: List Table Dialog Input Example
 
 A common example documenting dialog input for an exercise step:
 
 .. code-block:: rst
-
+   :linenos:
+   
    #. On the :guilabel:`General` supply the database name and owner.
 
       .. list-table::
@@ -680,11 +666,13 @@ A common example documenting dialog input for an exercise step:
 
          Create database
 
-.. nextslide:: Simple Table
+Simple Table (Not Recommended)
+------------------------------
 
 Simple tables are not recommended, as they are hard to maintain (consider adding :kbd:`Equilateral Triangle` to the table below).
 
 .. code-block:: rst
+   :linenos:
 
    ========= ============================================
    Shapes    Description
@@ -693,20 +681,24 @@ Simple tables are not recommended, as they are hard to maintain (consider adding
    Rectangle Four sides, 90 degree angles
    ========= ============================================
 
-Simple table example:
+.. ifnotslides::
+   
+   .. admonition:: Example simple table
 
-========= ============================================
-Shapes    Description
-========= ============================================
-Square    Four sides of equal length, 90 degree angles
-Rectangle Four sides, 90 degree angles
-========= ============================================
+      ========= ============================================
+      Shapes    Description
+      ========= ============================================
+      Square    Four sides of equal length, 90 degree angles
+      Rectangle Four sides, 90 degree angles
+      ========= ============================================
 
-.. nextslide:: Grid tables
+Grid tables (Not Recommended)
+-----------------------------
 
 Grid-tables are not recommended, even harder harder to maintain.
 
 .. code-block:: rst
+   :linenos:
 
    +-----------+----------------------------------------------+
    | Shapes    | Description                                  |
@@ -716,15 +708,17 @@ Grid-tables are not recommended, even harder harder to maintain.
    | Rectangle | Four sides, 90 degree angles                 |
    +-----------+----------------------------------------------+
 
-Grid table example
+.. ifnotslides::
+   
+   .. admonition:: Example grid table
 
-+-----------+----------------------------------------------+
-| Shapes    | Description                                  |
-+===========+==============================================+
-| Square    | Four sides of equal length, 90 degree angles |
-+-----------+----------------------------------------------+
-| Rectangle | Four sides, 90 degree angles                 |
-+-----------+----------------------------------------------+
+      +-----------+----------------------------------------------+
+      | Shapes    | Description                                  |
+      +===========+==============================================+
+      | Square    | Four sides of equal length, 90 degree angles |
+      +-----------+----------------------------------------------+
+      | Rectangle | Four sides, 90 degree angles                 |
+      +-----------+----------------------------------------------+
 
 Admonitions: Notes and Warnings
 -------------------------------
@@ -736,12 +730,15 @@ When it is beneficial to have a section of text stand out from the main text, Sp
 We make limited use of ``note`` and ``warning`` when writing, as they distract
 
 .. code-block:: rst
+   :linenos:
 
    .. note:: You might want to temporarily set some layer transparency to make adding the ring easier.
 
-Example:
+.. ifnotslides::
+   
+   .. admonition:: Example  note
 
-.. note:: You might want to temporarily set some layer transparency to make adding the ring easier.
+      .. note:: You might want to temporarily set some layer transparency to make adding the ring easier.
 
 When generating slides any ``note`` directives are available as from the presenters console.
 
@@ -750,30 +747,73 @@ When generating slides any ``note`` directives are available as from the present
 The use of ``warning`` should be reserved for really common mistakes that have a history of class disruption.
 
 .. code-block:: rst
-
+   :linenos:
+   
    .. warning:: Please be sure to use :command:`Firefox` as we are making use of its ability to display JSON and XML output in a readable fashion.
 
-Example:
+.. ifnotslides::
+   
+   .. admonition:: Example warning
 
-.. warning:: Please be sure to use :command:`Firefox` as we are making use of its ability to display JSON and XML output in a readable fashion.
+      .. warning:: Please be sure to use :command:`Firefox` as we are making use of its ability to display JSON and XML output in a readable fashion.
 
 .. nextslide:: Admonition
 
-We also use the generic ``admonition`` directive to isolate our exercise into boxes visually.
+We use the generic ``admonition`` directive to isolate our exercise into boxes visually.
 
 .. code-block:: rst
+   :linenos:
+   
+   .. nextslide:: Comparing WMS Versions
+   
+   .. admonition:: Explore
+
+      What is the difference between the ``CRS:84`` and ``EPSG:4326``
+      spatial reference systems?
+      
+      .. ifnotslides::
+      
+         .. include:: explore_crs84.txt
+   
+   .. admonition:: Challenge
+      
+      Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
+      
+      .. ifnotslides::
+         
+         * For background compare OGC WMS specification with the results produced by :command:`GeoServer`.
+
+.. nextslide:: Comparing WMS Versions
+
+.. ifslides::
 
    .. admonition:: Explore
 
       What is the difference between the ``CRS:84`` and ``EPSG:4326``
       spatial reference systems?
-
-.. admonition:: Explore
-
-   What is the difference between the ``CRS:84`` and ``EPSG:4326``
-   spatial reference systems?
+  
+   .. admonition:: Challenge
+  
+      Do you expect ``CRS:84`` to work with a WFS 1.0.0 GetMap Request?
 
 .. ifnotslides::
+
+   .. admonition:: Example use of admonition for exercises
+
+      .. admonition:: Explore
+
+         What is the difference between the ``CRS:84`` and ``EPSG:4326``
+         spatial reference systems?
+      
+         #. Review carefully the WMS 1.3.0 GetCapabiities document which lists both spatial reference systems.
+         #. Download the WMS 1.3.0 specification from the OGC website for the definition of ``CRS:84``
+         #. You may wish to compare the generated layer bounds for both ``CRS:84`` and ``EPSG:4326``.
+      
+      .. admonition:: Challenge
+      
+         Do you expect ``CRS:84`` to work with a WFS 1.0.0 GetMap Request?
+         
+         * For background compare OGC WMS specification with the results produced by :command:`GeoServer`.
 
    Reference:
 
@@ -787,7 +827,8 @@ We use the ``only`` directive, combined with our ant :file:`build.xml` script, t
 To provide notes that only an instructor will see (such as an answer to an Explore section):
 
 .. code-block:: rst
-
+   :linenos:
+   
    .. admonition:: Explore
 
       What is the difference between the ``CRS:84`` and ``EPSG:4326``?
@@ -798,57 +839,132 @@ To provide notes that only an instructor will see (such as an answer to an Explo
 
             The difference is the strict definition of axis order.
 
-.. nextslide:: Workbook
+.. ifnotslides::
 
-Build with ``ant workbook`` example output:
+   Build with ``ant workbook`` example output:
 
-.. admonition:: Explore
+   .. admonition:: Example workbook build
+   
+      .. admonition:: Explore
 
-   What is the difference between the ``CRS:84`` and ``EPSG:4326``?
+         What is the difference between the ``CRS:84`` and ``EPSG:4326``?
 
-.. nextslide:: Instructor
+   Build with ``ant instructor`` example output:
 
-Build with ``ant instructor`` example output:
+   .. admonition:: Example instructor build including instructor note
+   
+      .. admonition:: Explore
 
-.. admonition:: Explore
+         What is the difference between the ``CRS:84`` and ``EPSG:4326``?
 
-   What is the difference between the ``CRS:84`` and ``EPSG:4326``?
+         .. only:: instructor
 
-   .. admonition:: Instructor Notes
+            .. admonition:: Instructor Notes
 
-      The difference is the strict definition of axis order.
+               The difference is the strict definition of axis order.
+
+Images and Graphics
+===================
+
+
+.. ifnotslides::
+   
+   Add images to your documentation when possible.  Images, such as screenshots, are a very helpful way of making documentation understandable and provide an entry point for visual instruction.
+
+   When making screenshots, try to crop out unnecessary content (browser window, desktop, etc).  Avoid scaling the images, as the sphinx theme automatically resizes large images.
 
 Images
 ------
 
-Add images to your documentation when possible.  Images, such as screenshots, are a very helpful way of making documentation understandable.  When making screenshots, try to crop out unnecessary content (browser window, desktop, etc).  Avoid scaling the images, as the Sphinx theme automatically resizes large images.  It is also helpful to include a caption underneath the image.
-
-.. nextslide::
-   :increment:
-
-For images, use the ``figure`` directive and add a caption. Place the image files in an ``img`` directory:
+For images, use the ``figure`` directive and add a caption. Place the image files in an :file:`img` directory:
 
 .. code-block:: rst
+   :linenos:
+   
+   .. figure: img/boundless_desktop_install.png
 
-   .. figure: img/welcome.png
+      Boundless Desktop Setup installing
 
-      Welcome page for the installer
+.. ifnotslides::
+
+   .. admonition:: Example image
+   
+      .. figure: img/boundless_desktop_install.png
+
+         Boundless Desktop Setup installing
 
 When given the option 8-bit PNG are preferred (text remains readable and file size is smaller). There are some tools (https://pngquant.org)
 
 .. nextslide::
    :increment:
 
-Directory structure::
+Directory structure:
 
-  src/section/index.rst - section being written
-  src/section/img       - images and screen shots used in section/index.rst above
-  src/index.rst         - start of module
-  src/config.py
+.. list-table::
+   :widths: 30 70
+
+   * - :file:`src/section/index.rst`
+     - section being written
+   * - :file:`src/section/img/``
+     - images and screen shots used in section/index.rst above
+   * - :file:`src/index.rst`
+     - start of module
+   * - :file:`src/config.py`
+     - 
+
+Icons
+-----
+
+It is technically possible to show icons such as toolbar buttons inline, using  substitutions.
+
+.. code-block:: rst
+   :linenos:
+
+   #. From the :menuselection:`toolbar` select :guilabel:`Save` ( |save| ) to make the change and remain in edit mode.
+
+   .. |save| image:: img/save.png
+             :class: inline
+
+.. ifnotslides::
+
+   .. admonition:: Example icon
+
+      4. From the :menuselection:`toolbar` select :guilabel:`Save` ( |save| ) to make the change and remain in edit mode.
+
+      .. |save| image:: img/save.png
+                :class: inline
+
+.. nextslide:: Icon Tooltip
+
+You may prefer to reference toolbar buttons by name (as provided by Icon tooltip):
+
+.. code-block:: rst
+   :linenos:
+
+   #. From the :menuselection:`toolbar` select :guilabel:`Save` to make the change and remain in edit mode.
+
+.. ifnotslides::
+
+   .. admonition:: Example
+      
+      4. From the :menuselection:`toolbar` select :guilabel:`Save` to make the change and remain in edit mode.
 
 Screenshots
 -----------
 
+Screenshots are essential to the success of step by step exercises, a consistent visual appearance is important to their success.
+
+.. warning::
+   
+   Do you run linux? If so fire up a virtual machine to take screen snaps. No excuses.
+
+.. warning::
+   
+   Do you run macOS? If so fire up a virtual machine to take screen snaps. No excuses.
+
+.. nextslide::
+   :increment:
+   
 * Change Windows 10 Background to *sold color* with *white* for easier screen capture
 
   .. figure:: img/screensnap-background.png
@@ -871,18 +987,26 @@ Screenshots
 
 * Stick to clipping out screen and dialog content (so the result is more cross platform)
 * Remove obvious version numbers (so we do not have to update constantly)
-
-.. nextslide::
-   :increment:
-
-* This course is written and tested with Firefox, so use Firefox for screen snaps
-* When making screen snaps of GeoServer or any web app determine the minimum width before horizontal scroll bars appear.
-* Take a crop of the page, rather than include the browser window.
-* Crop to the full width of the form ignoring navigation menu (rather than have the size change from step to step).
 * Use width percentage as required for consistent look for navigation menu.
 
-.. nextslide::
+  .. code-block:: rst
+     :linenos:
+  
+     .. figure: img/start-tomcat.png
+        :width: 30%
+        
+        Launch Tomcat from the Start Menu
+
+.. nextslide:: Browser Screen Snaps
    :increment:
+
+* This course is written and tested with :command:`Firefox`, so use :command:Firefox for screen snaps
+* When making screen snaps of :command:`GeoServer` or any web app determine the minimum width before horizontal scroll bars appear.
+* Take a crop of the page, rather than include the entire browser window.
+* Crop to the full width of the form ignoring navigation menu (rather than have the size change from step to step).
+
+.. nextslide::
+   :increment: 
 
 .. tip:: On MacOS use :command:`System Preferences` navigate to :menuselection:`Keyboard --> Shortcuts` and ensure :guilabel:`Copy a picture of section area to the clipboard` is mapped to :kbd:`shift-command-4`. You can then paste the clipboard into the :command:`Preview` application and save ther result as png.
 
@@ -890,41 +1014,25 @@ Screenshots
 
 There are several tools, example https://pngquant.org, for bulk converting images to :file:`PNG`.
 
-Icons
------
-
-It is technically possible to show icons such as toolbar buttons inline, using  substitutions.
-
-.. code-block:: rst
-
-   #. From the :menuselection:`toolbar` select :guilabel:`Save` ( |save| ) to make the change and remain in edit mode.
-
-   .. |save| image:: img/save.png
-             :class: inline
-
-Example:
-
-#. From the :menuselection:`toolbar` select :guilabel:`Save` ( |save| ) to make the change and remain in edit mode.
-
-.. |save| image:: img/save.png
-          :class: inline
-
-We prefer to reference toolbar buttons by name:
-
-.. code-block:: rst
-
-   #. From the :menuselection:`toolbar` select :guilabel:`Save` to make the change and remain in edit mode.
-
 Figures
 -------
 
 For figures, or diagrams we need to draw by hand, use the ``figure`` directive and add a caption. Place the image files in the top-level ``/figure`` directory:
 
 .. code-block:: rst
+   :linenos:
 
    .. figure:: /figure/component_diagram.*
 
       Boundless Server component architecture
+
+.. ifnotslides::
+
+   .. admonition:: Example figure
+   
+      .. figure:: /figure/component_diagram.*
+
+         Boundless Server component architecture
 
 Please save both a :file:`svg` and :file:`png` image. The above snippet will use the SVG image for builders such as html, while use PDF image for PDF generation.
 
@@ -949,7 +1057,7 @@ Component diagrams take the time to include component logos and product grouping
 
    Boundless Server component architecture
 
-.. nextslide::
+.. nextslide:: Interaction illustrations
    :increment:
 
 Component interaction is often illustrated with block diagrams, showing the internal components involved.
@@ -958,8 +1066,7 @@ Component interaction is often illustrated with block diagrams, showing the inte
 
    Interaction diagrams
 
-.. nextslide::
-   :increment:
+.. nextslide:: Exercise illustrations 
 
 When illustrating configuration make sure diagram exactly matches the exercise.
 
@@ -967,8 +1074,7 @@ When illustrating configuration make sure diagram exactly matches the exercise.
 
    Configuration Illustration
 
-.. nextslide::
-   :increment:
+.. nextslide:: Boundless Branding Icons
 
 Follow boundless branding for icons such as GeoServer and QGIS when available.
 
@@ -978,8 +1084,7 @@ Follow boundless branding for icons such as GeoServer and QGIS when available.
 
 Use of opensource logos are fine when they do not conflict with company branding (such as pgAdmin or SQL Shell above).
 
-.. nextslide::
-   :increment:
+.. nextslide:: Boundless Branding Fonts
 
 Follow boundless styleguide for use of fonts.
 
@@ -989,8 +1094,7 @@ Follow boundless styleguide for use of fonts.
 
 We may need to update our sphinx theme over time.
 
-.. nextslide::
-   :increment:
+.. nextslide:: Boundless Style Guide Colors
 
 Boundless provides a range of colors for use:
 
@@ -1001,52 +1105,81 @@ Boundless provides a range of colors for use:
 Our illustrations use a slightly muted version of the company color palette.
 
 Code Examples
--------------
+=============
 
-Use ``code-block``, specifying language for syntax highlighting:
+.. ifslides::
+   
+   Reduce frustration with line numbers and directly including live code examples.
+
+.. ifnotslides:: 
+   
+   Describing edits to configuration files and code examples represent the largest and most frustrating opportunity for error. We have standardized on using line numbers for all code examples, and using using ``literal-include`` to directly include live code examples whenever possible.
+
+Code Block
+----------
+
+Use ``code-block``, specifying language for syntax highlighting, and turning on ``linenos`` :
 
 .. code-block:: rst
+   :linenos:
+   
+   #. Define the initial point style:
 
-   .. code-block:: yaml
+      .. code-block:: yaml
+         :linenos:
+            
+           - point:
+               symbols:
+               - mark:
+                   shape: star
 
-        - point:
-            symbols:
-            - mark:
-                shape: star
+.. ifnotslides::
 
-Example:
+   .. admonition:: Example code-block
 
-.. code-block:: yaml
-
-     - point:
-         symbols:
-         - mark:
-             shape: star
+      4. Define the initial point style:
+ 
+         .. code-block:: yaml
+            :linenos:
+            
+              - point:
+                  symbols:
+                  - mark:
+                      shape: star
 
 .. nextslide::
    :increment:
 
-When adding or editing emphasis the changed lines:
+When adding or editing use emphasis to indicate changed lines:
 
 .. code-block:: rst
+   :linenos:
+   
+   #. Change the ``shape`` to :kbd:`triangle`:
 
-   .. code-block:: yaml
-      :emphasize-lines: 4
+      .. code-block:: yaml
+         :linenos:
+         :emphasize-lines: 4
 
-        - point:
-            symbols:
-            - mark:
-                shape: triangle
+           - point:
+               symbols:
+               - mark:
+                   shape: triangle
 
-Example
+.. ifnotslides::
 
-.. code-block:: yaml
-   :emphasize-lines: 4
+   .. admonition:: Example code-block with emphasis
 
-     - point:
-         symbols:
-         - mark:
-             shape: triangle
+      5. Change the ``shape`` to :kbd:`triangle`:
+
+         .. code-block:: yaml
+            :linenos:
+            :emphasize-lines: 4
+
+              - point:
+                  symbols:
+                  - mark:
+                      shape: triangle
 
 Literal Includes
 ----------------
@@ -1054,18 +1187,23 @@ Literal Includes
 Use ``literalinclude`` and ``download`` directives, to avoid possibility of error with config, style and data files!
 
 .. code-block:: rst
+   :linenos:
 
    #. Contents of :download:`geoserver.xml <files/geoserver.xml>`:
 
       .. literalinclude:: files/geoserver.xml
          :language: xml
+         :linenos:
 
-Example:
+.. ifnotslides::
 
-4. Contents of :download:`geoserver.xml <files/geoserver.xml>`:
+   .. admonition:: Example literal include
 
-   .. literalinclude:: files/geoserver.xml
-      :language: xml
+      2. Contents of :download:`geoserver.xml <files/geoserver.xml>`:
+
+         .. literalinclude:: files/geoserver.xml
+            :language: xml
+            :linenos:
 
 .. nextslide::
    :increment:
@@ -1073,40 +1211,78 @@ Example:
 Combined with line highlighting to help direct exercises where configuration files are changed.
 
 .. code-block:: rst
+   :linenos:
 
    7. Change to :file:`svg` icon as show below:
 
-   .. literalinclude:: files/airports.ysld
-      :language: yaml
-      :emphasize-lines: 4-5
+      .. literalinclude:: files/airports.ysld
+         :language: yaml
+         :linenos:
+         :emphasize-lines: 4-5
 
-Example:
+.. ifnotslides::
 
-7. Change to :file:`svg` icon as show below:
+   .. admonition:: Example literal include with emphasis
 
-   .. literalinclude:: files/airports.ysld
-      :language: yaml
-      :emphasize-lines: 4-5
+      7. Change to :file:`svg` icon as show below:
+
+         .. literalinclude:: files/airports.ysld
+            :language: yaml
+            :linenos:
+            :emphasize-lines: 4-5
 
 .. nextslide::
    :increment:
 
-If you want to include only part of the file use ``start-after`` and ``end-before`` (rather than line numbers). Your can also use ``prepend`` and ``append`` to keep structured text like xml or json valid.
+If you want to include only part of the file use ``start-after`` and ``end-before`` (rather than line numbers). Your can also use ``prepend`` and ``append`` to keep structured text like xml or json valid. Note the use of ``lineno-start`` to keep line numbering consistent.
 
 .. code-block:: rst
+   :linenos:
+   
+   #. SLD lists symbology graphics in order of preference, first ``image/svg`` then ``mage/png``:
 
-   .. literalinclude:: files/airports1.sld
-      :language: xml
-      :start-after: <PointSymbolizer>
-      :end-before: <Mark>
+      .. literalinclude:: files/airports1.sld
+         :language: xml
+         :lineno-start: 33
+         :start-after: <PointSymbolizer>
+         :end-before: <Mark>
 
-Example:
+.. ifnotslides::
+   
+   .. admonition:: Example literal include of snippet
 
-.. literalinclude:: files/airports1.sld
-   :language: xml
-   :start-after: <PointSymbolizer>
-   :end-before: <Mark>
+      8. SLD lists symbology graphics in order of preference, first ``image/svg`` then ``mage/png``:
+      
+         .. literalinclude:: files/airports1.sld
+            :language: xml
+            :lineno-start: 16
+            :start-after: <PointSymbolizer>
+            :end-before: <Mark>
 
-Reference:
+.. nextslide::
+   :increment:
+   
+It is good practice to provide the final document as a download and reference:
 
-* :sphinx:`Includes <markup/code.html#includes>`
+.. code-block:: rst
+   :linenos:
+   
+   #. The completed :download:`airports.sld <files/airports1.sld>`:
+
+      .. literalinclude:: files/airports1.sld
+         :language: xml
+
+.. ifnotslides::
+   
+   .. admonition:: Example literal include of snippet
+
+      9. The completed :download:`airports.sld <files/airports1.sld>`:
+
+         .. literalinclude:: files/airports1.sld
+            :language: xml
+
+.. ifnotslides::
+
+   Reference:
+
+   * :sphinx:`Includes <markup/code.html#includes>`

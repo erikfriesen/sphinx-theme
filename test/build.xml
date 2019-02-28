@@ -28,7 +28,7 @@
         <param name="outdir" value="${build}/rtd/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/rtd/workbook/index.html"/>
+        <param name="file" value="${build}/rtd/index.html"/>
     </antcall>
   </target>
   
@@ -42,7 +42,7 @@
         <param name="outdir" value="${build}/html/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/html/workbook/index.html"/>
+        <param name="file" value="${build}/html/index.html"/>
     </antcall>
   </target>
   
@@ -56,7 +56,7 @@
         <param name="outdir" value="${build}/workbook/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/workbook/workbook/index.html"/>
+        <param name="file" value="${build}/workbook/index.html"/>
     </antcall>
   </target>
 
@@ -70,7 +70,7 @@
         <param name="outdir" value="${build}/slides/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/slides/workbook/index.html"/>
+        <param name="file" value="${build}/slides/index.html"/>
     </antcall>
   </target>
 
@@ -84,7 +84,7 @@
         <param name="outdir" value="${build}/server/"/>
     </antcall>
     <antcall target="open">
-        <param name="file" value="${build}/server/workbook/index.html"/>
+        <param name="file" value="${build}/server/index.html"/>
     </antcall>
   </target>
 
@@ -134,7 +134,7 @@
     <echo>Building sphinx materials...</echo>
     <exec executable="sphinx-build" failonerror="true">
       <arg line="${tags}"/>
-      <arg line="-W"/>
+      <arg line="-W --keep-going "/>
       <arg line="-b ${builder}"/>
       <arg line="-Dhtml_theme=${theme}"/>
       <arg line="-A theme_coursename='Course Title'"/>
