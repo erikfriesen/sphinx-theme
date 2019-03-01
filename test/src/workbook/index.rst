@@ -780,16 +780,16 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
 
    .. nextslide:: Comparing WMS Versions
    
-   .. admonition:: Explore difference between CRS:84 and EPSG:4326
+   .. admonition:: Explore
 
       What is the difference between the ``CRS:84`` and ``EPSG:4326``
-      spatial reference systems?
+      spatial reference systems:
       
       .. ifnotslides::
       
          .. include:: explore_crs84.txt
    
-   .. admonition:: Challenge WMS GetMap use
+   .. admonition:: Challenge
       
       Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
       
@@ -797,35 +797,35 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
          
          * For background compare OGC WMS specification with the results produced by :command:`GeoServer`.
 
-.. rst-class:: break
+.. rst-class:: exercise
 
 .. nextslide:: Comparing WMS Versions
 
 .. ifslides::
 
-   .. admonition:: Explore difference between CRS:84 and EPSG:4326
+   .. admonition:: Explore
 
       What is the difference between the ``CRS:84`` and ``EPSG:4326``
-      spatial reference systems?
+      spatial reference systems:
   
-   .. admonition:: Challenge WMS GetMap use
+   .. admonition:: Challenge
   
       Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
 
 .. ifnotslides::
 
-   .. admonition:: Example use of admonition for exercises
+   .. admonition:: Example
 
-      .. admonition:: Explore difference between CRS:84 and EPSG:4326
+      .. admonition:: Explore
 
          What is the difference between the ``CRS:84`` and ``EPSG:4326``
-         spatial reference systems?
+         spatial reference systems:
       
          #. Review carefully the WMS 1.3.0 GetCapabiities document which lists both spatial reference systems.
          #. Download the WMS 1.3.0 specification from the OGC website for the definition of ``CRS:84``
          #. You may wish to compare the generated layer bounds for both ``CRS:84`` and ``EPSG:4326``.
       
-      .. admonition:: Challenge WMS GetMap use
+      .. admonition:: Challenge
       
          Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
          
@@ -948,8 +948,8 @@ We use the `ifnotslides` directive to hide large blocks and reference links from
    * `hieroglyph <http://docs.hieroglyph.io/>`__
 
 
-Include download.txt (recommended)
-----------------------------------
+Include download.txt
+--------------------
 
 The `include` directive can be used to inline a file, or a few lines of a file.
 
