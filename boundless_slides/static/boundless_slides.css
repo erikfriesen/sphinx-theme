@@ -60,9 +60,9 @@ div[class^='highlight'] pre
 {
 	white-space: pre;
 	margin: 0;
-	padding: 12px 12px;
+	padding: 4px 4px;
 	font-family: "Source Code Pro", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1.5;
 	display: block;
 	overflow: auto;
@@ -77,11 +77,24 @@ div[class^='highlight'] pre
 	position: relative;
 }
 
+table.highlighttable
+{
+    margin: 20px 0px 0px 0px;
+}
+
+table.highlighttable td.linenos
+{
+    padding: 0 0 0 0;
+}
+
+table.highlighttable td.code
+{
+    padding: 0 15px 0 0;
+    border: 0;
+}
+
 /** Color schemes for admonitions **/
-/** Applied ONLY when **/
-/** the exercise slide class **/
-/** visual distinction styling **/
-/** is not in effect **/
+/** Applied ONLY when the exercise slide class visual distinction styling is not in effect **/
 
 /* Color scheme for explore admonition */
 div[class ^= "admonition-explore"]
@@ -139,27 +152,5 @@ div[class ^= "admonition-challenge"] > p.admonition-title
 /** Removes admonition styling above **/
 .slides > article.exercise.slide
 {
-    background-color: #e7f2fa;
-    background-clip: content-box;
-    box-shadow: inset 0 0 0 60px #2a728e;
-}
-
-div[class ^= "admonition"] > p.admonition-title
-{
-	  color: rgb(102, 102, 102);
-    background-color: #e7f2fa;
-}
-
-.slides > article.exercise.slide > h3
-{
-    color: #333333;
-    margin: 30px 0 0 10px;
-}
-
-.slides > article.exercise.slide > div.admonition
-{
-	  color: rgb(102, 102, 102);
-    background-color: #e7f2fa;
-    margin: 10px;
-    padding: 7px;
+    box-shadow: inset 0 0 6px 2px #2a728e;
 }
