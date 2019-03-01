@@ -1183,6 +1183,41 @@ When adding or editing use emphasis to indicate changed lines:
                   - mark:
                       shape: triangle
 
+.. nextslide::
+
+Command line exampels should be formatted appropriate (`bat` or `bash`) and do not require line numbers:
+
+.. code-block:: rst
+   :linenos:
+   
+   #. Check the contents of the directory:
+   
+      .. code-block:: bat
+         
+         $ ls -la
+      
+      ::
+      
+        total 2800
+        -rw-r--r--   1 boundless  staff      429 14 Nov 16:14 README.md
+
+.. ifnotslides::
+
+   .. admonition:: Example bash output
+
+      #. Check the contents of the directory:
+   
+         .. code-block:: bat
+         
+            $ ls -la
+      
+         ::
+      
+           total 2800
+           -rw-r--r--   1 boundless  staff      429 14 Nov 16:14 README.md
+
+
+   
 Literal Includes
 ----------------
 
