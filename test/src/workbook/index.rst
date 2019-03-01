@@ -106,7 +106,7 @@ Reference commands (such as :command:`pgsql`) with the following syntax:
 
    .. code-block:: bat
 
-      psql -U postgres nyc
+      > psql -U postgres nyc
 
 Reference a label or button in a user interface
 -----------------------------------------------
@@ -783,18 +783,18 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
          
          * For background compare OGC WMS specification with the results produced by :command:`GeoServer`.
 
-.. rst-class:: exercise
+.. rst-class:: break
 
 .. nextslide:: Comparing WMS Versions
 
 .. ifslides::
 
-   .. admonition:: Explore difference between CRS:84 and EPSG:4326
+   .. admonition:: Explore
 
       What is the difference between the ``CRS:84`` and ``EPSG:4326``
       spatial reference systems?
   
-   .. admonition:: Challenge WMS GetMap use 
+   .. admonition:: Challenge
   
       Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
 
@@ -802,7 +802,7 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
 
    .. admonition:: Example use of admonition for exercises
 
-      .. admonition:: Explore difference between CRS:84 and EPSG:4326
+      .. admonition:: Explore
 
          What is the difference between the ``CRS:84`` and ``EPSG:4326``
          spatial reference systems?
@@ -811,7 +811,7 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
          #. Download the WMS 1.3.0 specification from the OGC website for the definition of ``CRS:84``
          #. You may wish to compare the generated layer bounds for both ``CRS:84`` and ``EPSG:4326``.
       
-      .. admonition:: Challenge WMS GetMap use
+      .. admonition:: Challenge
       
          Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
          
@@ -1192,7 +1192,7 @@ Command line exampels should be formatted appropriate (`bat` or `bash`) and do n
    
    #. Check the contents of the directory:
    
-      .. code-block:: bat
+      .. code-block:: bash
          
          $ ls -la
       
@@ -1207,7 +1207,7 @@ Command line exampels should be formatted appropriate (`bat` or `bash`) and do n
 
       #. Check the contents of the directory:
    
-         .. code-block:: bat
+         .. code-block:: bash
          
             $ ls -la
       
