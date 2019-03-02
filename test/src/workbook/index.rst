@@ -762,6 +762,8 @@ The use of ``warning`` should be reserved for really common mistakes that have a
 Special Effects
 ===============
 
+.. ifslides:: Using directives together.
+
 .. notslides:: We use a number of directives together to follow our writing guidelines. This section provides cut and paste examples for use when writing workbooks.
 
    Reference:
@@ -784,19 +786,14 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
       
       .. ifnotslides::
       
-         .. include:: files/wms_getcapabilities_exercise.txt
+         .. include:: wms_getcapabilities_exercise.txt
          
    .. admonition:: Explore difference between ``CRS:84`` and ``EPSG:4326``
 
       .. ifnotslides::
          
-         What is the difference between the ``CRS:84`` and ``EPSG:4326``
-         spatial reference systems:
-      
-         #. Review carefully the WMS 1.3.0 GetCapabiities document which lists both spatial reference systems.
-         #. Download the WMS 1.3.0 specification from the OGC website for the definition of ``CRS:84``
-         #. You may wish to compare the generated layer bounds for both ``CRS:84`` and ``EPSG:4326``.
-   
+         .. include:: explore_crs84.txt
+         
    .. admonition:: Challenge do expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
       
       .. ifnotslides::
@@ -831,12 +828,7 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
         
       .. admonition:: Explore difference between ``CRS:84`` and ``EPSG:4326``
 
-         What is the difference between the ``CRS:84`` and ``EPSG:4326``
-            spatial reference systems:
-  
-         #. Review carefully the WMS 1.3.0 GetCapabiities document which lists both spatial reference systems.
-         #. Download the WMS 1.3.0 specification from the OGC website for the definition of ``CRS:84``
-         #. You may wish to compare the generated layer bounds for both ``CRS:84`` and ``EPSG:4326``.
+         .. include:: files/explore_crs84.txt
   
       .. admonition:: Challenge do expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
      

@@ -1,0 +1,6 @@
+What is the difference between the ``CRS:84`` and ``EPSG:4326``
+   spatial reference systems:
+
+#. Review carefully the WMS 1.3.0 GetCapabiities document which lists both spatial reference systems.
+#. Download the WMS 1.3.0 specification from the OGC website for the definition of ``CRS:84``
+#. You may wish to compare the generated layer bounds for both ``CRS:84`` and ``EPSG:4326``
