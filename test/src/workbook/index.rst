@@ -776,7 +776,7 @@ Exercises
 We use the generic ``admonition`` directive to isolate our exercise into boxes visually.
 
 .. code-block:: rst
-   :linenos:
+   :lineno-start: 95
    
    .. rst-class:: break
 
