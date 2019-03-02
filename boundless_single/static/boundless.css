@@ -67,6 +67,16 @@ div[class^='highlight'] pre
 	  font-size: 66%;
 	  position: relative;
 }
+div.container-header > a.top {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+div.container-header > div.up {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 table.highlighttable
 {
