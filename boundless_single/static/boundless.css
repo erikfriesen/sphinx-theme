@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova-sbold-webfont.eot");
+  src: url("../fonts/proximanova-sbold.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-sbold-webfont.woff") format("woff"), url("../fonts/proximanova-sbold-webfont.ttf") format("truetype"), url("../fonts/proximanova-sbold-webfont.svg#proxima_nova_ltsemibold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova-light-webfont.eot");
+  src: url("../fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova-light-webfont.ttf") format("truetype"), url("../fonts/proximanova-light-webfont.svg#proxima_nova_ltlight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("fonts/sourcecodepro-regular-webfont.eot");
+    src: url("fonts/sourcecodepro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/sourcecodepro-regular-webfont.woff") format("woff"), url("fonts/sourcecodepro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcecodepro-regular-webfont.svg#sourcecodepro-regular") format("svg");
+}
+
+.slides > article
+{
+	  background-color: #f2f2f2;
+	  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.slides > article.level-1
+{
+	  color: white;
+	  background-image: url("cover.png");
+	  background-repeat: no-repeat;
+	  background-color: #2A728E;
+}
+
+.slides > article.level-1 h1 { color: white; }
+
+/** code examples */
+code, .rst-content tt { font-family: "Source Code Pro", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
+
+div[class^='highlight'] pre
+{
+	  white-space: pre;
+	  margin: 0;
+	  padding: 4px 4px;
+	  font-family: "Source Code Pro", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	  font-size: 14px;
+	  line-height: 1.5;
+	  display: block;
+	  overflow: auto;
+	  color: #333333;
+}
+
+.container-header
+{
+	  top: 1ex;
+	  left: 30px;
+	  font-size: 66%;
+	  position: relative;
+}
+
+table.highlighttable
+{
+    margin: 20px 0px 0px 0px;
+}
+
+table.highlighttable td.linenos
+{
+    padding: 0 0 0 0;
+    text-align: right;
+}
+
+table.highlighttable td.code
+{
+    padding: 0 15px 0 0;
+    border: 0;
+}
+
+/** Color schemes for admonitions **/
+/** Applied ONLY when the exercise slide class visual distinction styling is not in effect **/
+
+/* padding adjustments for all admonitions and their titles */
+div[class ^= "admonition-"]
+{
+    margin-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* admonition title bar margin adjustments */
+div[class ^= "admonition-"] > p.admonition-title
+{
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -12px;
+}
+
+/* Color scheme for explore admonition */
+div[class ^= "admonition-explore"]
+{
+    color: #95989b;
+    background-color: #e7f2fa;
+}
+/* title bar */
+div[class ^= "admonition-explore"] > p.admonition-title
+{
+    color: #c3c4c5;
+    background-color: #2a728e;
+}
+
+/* Color scheme for challenge admonition */
+div[class ^= "admonition-challenge"]
+{
+    color: #95989b;
+    background-color: #e1f7f3;
+}
+/* title bar */
+div[class ^= "admonition-challenge"] > p.admonition-title
+{
+    color: #c3c4c5;
+    background-color: #00a78d;
+}
+
+/* Color scheme for exercise admonition */
+div[class ^= "admonition-exercise"]
+{
+    color: #95989b;
+    background-color: #e7f2fa;
+}
+/* title bar */
+div[class ^= "admonition-exercise"] > p.admonition-title
+{
+    color: #c3c4c5;
+    background-color: #6abd0de;
+}
+
+/** Visual distinction for exercise slides**/
+/** Removes admonition styling above **/
+.slides > article.break.slide
+{
+    box-shadow: inset 0 0 6px 2px #2a728e;
+}
