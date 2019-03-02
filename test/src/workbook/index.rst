@@ -797,7 +797,7 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
          
          * For background compare OGC WMS specification with the results produced by :command:`GeoServer`.
 
-.. rst-class:: exercise
+.. rst-class:: break
 
 .. nextslide:: Comparing WMS Versions
 
