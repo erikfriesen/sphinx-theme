@@ -21,6 +21,12 @@ For internal testing of |theme| themes.
       
       style/index
       workbook/index
+      
+   .. toctree::
+      :maxdepth: 1
+      :caption: Test
+      
+      example/index
 
 .. ifnotslides::
 

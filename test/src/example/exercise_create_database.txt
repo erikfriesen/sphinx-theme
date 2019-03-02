@@ -1,0 +1,49 @@
+To create the ``training`` database used for this module:   
+
+#. Open the :guilabel:`Browser` and navigate to :menuselection:`Server --> PostgreSQL --> Databases` to review the available databases using the :guilabel:`Properties` tab.
+   
+   .. figure:: img/databases.png
+      
+      databases list
+
+The ``postgres`` database listed is the user database for the default `postgres` user.   
+
+#. With :guilabel:`Databases` selected in the browser select :menuselection:`Object --> Create --> Database` to open the :guilabel:`Create Database` dialog.
+   
+#. On the :guilabel:`General` tab supply the database name and owner.
+   
+   .. list-table::   
+
+      * - **Database**
+        - :kbd:`training`
+      * - **Owner**
+        - :kbd:`postgres`   
+
+   .. figure:: img/create_database.png
+  
+      Create database
+   
+#. On the :guilabel:`Definition` tab confirm the table encoding.
+   
+   .. list-table::
+      
+      * - **Encoding**
+        - :kbd:`UTF8`   
+
+   .. figure:: img/create_database_definition.png
+      
+      Create database definition
+   
+#. Review the :guilabel:`SQL` tab showing the SQL command that will be used, and then click :guilabel:`Save` to create the database.
+   
+   .. figure:: img/create_database_sql.png
+      
+      Create database sql   
+
+#. Select the new ``training`` database and open it up to display the tree of objects that make up a database.
+   
+   Open :menuselection:`training --> Schemas --> public` to show the ``public`` schema.   
+
+   .. figure:: img/public.png
+      
+      public schema

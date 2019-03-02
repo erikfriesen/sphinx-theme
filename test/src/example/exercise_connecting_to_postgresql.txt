@@ -1,0 +1,27 @@
+Launch the :command:`pgAdmin` application and connect to :command:`PostgreSQL`:    
+
+#. Launch the application from :menuselection:`Start --> PostgerSQL 10 --> pgAdmin 4`.    
+
+#. Launching the :command:`pgAdmin` application.
+   
+   .. figure:: img/pgadmin.png
+  
+      PgAdmin Application    
+
+#. In the :guilabel:`Browser` navigate to :menuselection:`Servers --> PostgreSQL 10`.
+   
+   .. figure:: img/server.png
+      
+      Server selection
+   
+#. Double click the :guilabel:`PostgreSQL` entry to connect.
+    
+   * Enter :kbd:`postgres` in the :guilabel:`Password` prompt.
+     
+   * Check :guilabel:`Save Password` to prevent :guilabel:`pgAdmin` asking you each time you connect.
+    
+   Press :guilabel:`OK` to connect to the database.
+    
+   .. figure:: img/connect.png
+     
+      Connect to server

@@ -1,0 +1,39 @@
+Add the PostGIS extension to the `training` database:
+
+#. With ``training`` datbase selected in the :guilabel:`Browser`, open :menuselection:`Tools --> Query Tool` from the application menu bar.
+   
+   This adds an additional panel used to run SQL queries on the ``training`` database.   
+
+   .. figure:: img/query_tool.png
+  
+      Query tool
+   
+   The title of the :guilabel:`Query` panel indicates what database, user and server is used, in this case :guilabel:`Query - training on postgres@PostreSQL 10`.
+   
+#. Enter the following query into the query text field to load the PostGIS spatial extension:   
+
+   .. code-block:: sql   
+
+      CREATE EXTENSION postgis;
+       
+   Click the :guilabel:`Execute` button (it looks like a lightning bold) in the toolbar (or press :kbd:`F5`) to "Execute the query." 
+   
+   This query uses :command:`CREATE EXTENSION` to load spatial datatypes, functions and spatial reference definitions into the ``training`` database.
+   
+   .. figure:: img/create_extension.png
+      
+      Create extension
+   
+#. To confirm PostGIS is installed we will call a PostGIS function:   
+
+   .. code-block:: sql
+   
+      SELECT postgis_full_version();
+   
+   Click the :guilabel:`Execute` button to run this query. PostgreSQL will call the function :command:`postgis_full_version` which returns a description of the installed PostGIS components.
+   
+   .. figure:: img/postgis_full_version.png
+      
+      Postgis full version
+      
+   Congratulations the ``training`` database is now a spatial database!
