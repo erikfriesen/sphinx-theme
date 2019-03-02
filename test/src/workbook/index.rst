@@ -779,19 +779,25 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
    .. rst-class:: break
 
    .. nextslide:: Comparing WMS Versions
-   
-   .. admonition:: Explore
 
-      What is the difference between the ``CRS:84`` and ``EPSG:4326``
-      spatial reference systems:
+   .. admonition:: Exercise issue WMS 1.3.0 GetCapabilities request
       
       .. ifnotslides::
       
-         .. include:: explore_crs84.txt
-   
-   .. admonition:: Challenge
+         .. include:: files/wms_getcapabilities_exercise.txt
+         
+   .. admonition:: Explore difference between ``CRS:84`` and ``EPSG:4326``
+
+      .. ifnotslides::
+         
+         What is the difference between the ``CRS:84`` and ``EPSG:4326``
+         spatial reference systems:
       
-      Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
+         #. Review carefully the WMS 1.3.0 GetCapabiities document which lists both spatial reference systems.
+         #. Download the WMS 1.3.0 specification from the OGC website for the definition of ``CRS:84``
+         #. You may wish to compare the generated layer bounds for both ``CRS:84`` and ``EPSG:4326``.
+   
+   .. admonition:: Challenge do expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
       
       .. ifnotslides::
          
@@ -803,32 +809,37 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
 
 .. ifslides::
 
-   .. admonition:: Explore
-
-      What is the difference between the ``CRS:84`` and ``EPSG:4326``
-      spatial reference systems:
-  
-   .. admonition:: Challenge
-  
-      Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
+   .. admonition:: Exercise issue WMS 1.3.0 GetCapabilities request
+      
+      ..
+      
+   .. admonition:: Explore difference between ``CRS:84`` and ``EPSG:4326``
+      
+      ..
+      
+   .. admonition:: Challenge do expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
+   
+      ..
 
 .. ifnotslides::
 
    .. admonition:: Example
 
-      .. admonition:: Explore
+      .. admonition:: Exercise issue WMS 1.3.0 GetCapabilities request
+     
+         .. include:: files/wms_getcapabilities_exercise.txt
+        
+      .. admonition:: Explore difference between ``CRS:84`` and ``EPSG:4326``
 
          What is the difference between the ``CRS:84`` and ``EPSG:4326``
-         spatial reference systems:
-      
+            spatial reference systems:
+  
          #. Review carefully the WMS 1.3.0 GetCapabiities document which lists both spatial reference systems.
          #. Download the WMS 1.3.0 specification from the OGC website for the definition of ``CRS:84``
          #. You may wish to compare the generated layer bounds for both ``CRS:84`` and ``EPSG:4326``.
-      
-      .. admonition:: Challenge
-      
-         Do you expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
-         
+  
+      .. admonition:: Challenge do expect ``CRS:84`` to work with a WMS 1.0.0 GetMap Request?
+     
          * For background compare OGC WMS specification with the results produced by :command:`GeoServer`.
 
 Instructor notes
