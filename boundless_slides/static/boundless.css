@@ -81,6 +81,7 @@ table.highlighttable td.code
 /* padding adjustments for all admonitions and their titles */
 div[class ^= "admonition-"]
 {
+    color: #f2f2f2;
     margin-bottom: 12px;
     padding-left: 12px;
     padding-right: 12px;
@@ -91,6 +92,7 @@ div[class ^= "admonition-"]
 /* admonition title bar margin adjustments */
 div[class ^= "admonition-"] > p.admonition-title
 {
+    color: #f2f2f2;
     margin-left: -12px;
     margin-right: -12px;
     margin-top: -12px;
@@ -99,40 +101,34 @@ div[class ^= "admonition-"] > p.admonition-title
 /* Color scheme for explore admonition */
 div[class ^= "admonition-explore"]
 {
-    color: #95989b;
     background-color: #e7f2fa;
 }
 /* title bar */
 div[class ^= "admonition-explore"] > p.admonition-title
 {
-    color: #c3c4c5;
     background-color: #2a728e;
 }
 
 /* Color scheme for challenge admonition */
 div[class ^= "admonition-challenge"]
 {
-    color: #95989b;
     background-color: #e1f7f3;
 }
 /* title bar */
 div[class ^= "admonition-challenge"] > p.admonition-title
 {
-    color: #c3c4c5;
     background-color: #00a78d;
 }
 
 /* Color scheme for exercise admonition */
 div[class ^= "admonition-exercise"]
 {
-    color: #95989b;
     background-color: #e7f2fa;
 }
 /* title bar */
 div[class ^= "admonition-exercise"] > p.admonition-title
 {
-    color: #c3c4c5;
-    background-color: #6abd0de;
+    background-color: #6ab0de;
 }
 
 /** Visual distinction for exercise slides**/
