@@ -782,6 +782,12 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
 
    .. nextslide:: Comparing WMS Versions
 
+   .. admonition:: Demo - A pre-exercise WMS demo
+
+      .. only:: instructor
+
+         Here is where the demo instructions for the instructor go.
+
    .. admonition:: Exercise issue WMS 1.3.0 GetCapabilities request
       
       .. ifnotslides::
@@ -806,6 +812,10 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
 
 .. ifslides::
 
+   .. admonition:: Demo - A pre-exercise WMS demo
+
+      ..
+
    .. admonition:: Exercise issue WMS 1.3.0 GetCapabilities request
       
       ..
@@ -821,6 +831,12 @@ We use the generic ``admonition`` directive to isolate our exercise into boxes v
 .. ifnotslides::
 
    .. admonition:: Example
+
+      .. admonition:: Demo - A pre-exercise WMS demo
+
+         .. only:: instructor
+
+            Here is where the demo instructions for the instructor go.
 
       .. admonition:: Exercise issue WMS 1.3.0 GetCapabilities request
      

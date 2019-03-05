@@ -211,4 +211,14 @@ div[class ^= "admonition-instructor-notes"] > p.admonition-title
     background-color: #f58d50;
 }
 
-/** Visual cues for slides announcing exercises
+/* Color scheme for demo admonition */
+/* body */
+div[class ^= "admonition-demo"].admonition
+{
+    background: #ffd8c1;
+}
+/* title bar */
+div[class ^= "admonition-demo"] > p.admonition-title
+{
+    background-color: #f58d50;
+}

@@ -108,7 +108,8 @@ div[class ^= "admonition-"]
     padding-right: 12px;
     padding-top: 6px;
     padding-bottom: 6px;
-    background-clip: content-box;
+    /* commenting this out for now because demo box looks WORSE with it in place. */
+/*    background-clip: content-box;*/
 }
 
 /* admonition title bar margin adjustments */
@@ -151,6 +152,17 @@ div[class ^= "admonition-exercise"]
 div[class ^= "admonition-exercise"] > p.admonition-title
 {
     background-color: #6ab0de;
+}
+
+/* Color scheme for demo admonition */
+div[class ^= "admonition-demo"]
+{
+    background-color: #f58d50;
+}
+/* title bar */
+div[class ^= "admonition-demo"] > p.admonition-title
+{
+    background-color: #f58d50;
 }
 
 /** Visual distinction for exercise slides**/
