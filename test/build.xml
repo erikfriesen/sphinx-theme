@@ -1,4 +1,4 @@
-<project name="example" default="all"
+<project name="example" default="default"
  xmlns:if="ant:if"
  xmlns:unless="ant:unless"
 >
@@ -15,7 +15,7 @@
     <mkdir dir="${build}"/>
   </target>
   
-  <target name="all" depends="rtd,learning,boundless_rtd,slides"
+  <target name="default" depends="boundless_rtd,slides"
           description="Build all themes for visual comparison."/>
   
   <target name="rtd" depends="init"
