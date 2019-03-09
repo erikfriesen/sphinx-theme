@@ -764,7 +764,7 @@ Special Effects
 
 .. ifslides:: Using directives together.
 
-.. notslides:: We use a number of directives together to follow our writing guidelines. This section provides cut and paste examples for use when writing workbooks.
+.. ifnotslides:: We use a number of directives together to follow our writing guidelines. This section provides cut and paste examples for use when writing workbooks.
 
    Reference:
 
@@ -946,7 +946,7 @@ We use the `ifnotslides` directive to hide large blocks and reference links from
 .. code-block:: rst
    :linenos:
    
-   .. notslides:: 
+   .. ifnotslides:: 
 
       Reference:
 
