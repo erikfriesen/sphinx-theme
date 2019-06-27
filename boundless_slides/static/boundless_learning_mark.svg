@@ -1,17 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="60px" height="70px" viewBox="0 0 60 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>boundless_learning_mark</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="boundless_learning_mark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="mark" transform="translate(1.000000, 10.000000)" fill-rule="nonzero">
-            <polygon id="Shape" fill="#2A728E" points="4.17311001 10.8816938 0 10.3535447 0 46.9149511 26.6705581 50.2915616 4.17311001 41.2121219"></polygon>
-            <polygon id="Shape" fill="#2A728E" points="54.0065775 10.8816938 54.0065775 41.2121219 31.5086614 50.2915616 58.1796875 46.9149511 58.1796875 10.3535447"></polygon>
-            <polygon id="Shape" fill="#00A78D" points="11.3440866 11.4245352 11.3440866 10.3933401 11.3440866 9.36165266 11.3440866 4.90265643 6.89251969 3.1060634 6.89251969 8.79806389 6.89251969 9.82975128 6.89251969 10.8609465 6.89251969 39.5365401 23.8503128 46.380329 11.3440866 36.3587854"></polygon>
-            <polygon id="Shape" fill="#F58D50" points="26.1171869 10.6712704 23.3592933 8.46121484 12.8003937 0 12.8003937 4.20008995 12.8003937 5.29675003 12.8003937 6.39390232 12.8003937 10.3134284 12.8003937 11.3451158 12.8003937 12.376311 12.8003937 36.0495005 28.38041 48.5340993 28.38041 14.3486256 28.38041 13.3174304 28.38041 12.6814857 28.38041 12.5323439 28.38041 12.4845988 28.0855733 12.2483345"></polygon>
-            <polygon id="Shape" fill="#F58D50" points="35.5451324 8.46121484 32.7872388 10.6712704 30.8188525 12.2483345 30.5240158 12.4845988 30.5240158 12.5323439 30.5240158 12.6814857 30.5240158 13.3174304 30.5240158 14.3486256 30.5240158 48.5340993 46.1035641 36.0495005 46.1035641 12.376311 46.1035641 11.3451158 46.1035641 10.3134284 46.1035641 6.39390232 46.1035641 5.29675003 46.1035641 4.20008995 46.1035641 0"></polygon>
-            <polygon id="Shape" fill="#00A78D" points="47.9534703 4.90265643 47.9534703 9.36165266 47.9534703 10.3933401 47.9534703 11.4245352 47.9534703 36.3587854 35.4472441 46.380329 52.4045692 39.5365401 52.4045692 10.8609465 52.4045692 9.82975128 52.4045692 8.79806389 52.4045692 3.1060634"></polygon>
-        </g>
-    </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 154.4 75.75"
+   version="1.1"
+   sodipodi:docname="boundless_learning_mark.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata41">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>1903.13-Planet_R_Federal-logo-print-pos</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="648"
+     inkscape:window-height="483"
+     id="namedview39"
+     showgrid="false"
+     inkscape:zoom="2.4546633"
+     inkscape:cx="77.199997"
+     inkscape:cy="37.875"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#363f43;}.cls-2{fill:#009db1;}.cls-3{fill:#909598;}</style>
+  </defs>
+  <title
+     id="title6">1903.13-Planet_R_Federal-logo-print-pos</title>
+  <path
+     class="cls-1"
+     d="M26.38,26.37h.12a3.86,3.86,0,0,1,3.85,3.85h.08a9.25,9.25,0,0,1,7.78-3.95c7.43,0,11.34,6,11.34,11.82A11,11,0,0,1,38.49,49.31c-4.59,0-6.88-2.33-7.71-3.71H30.7V57a4.31,4.31,0,0,1-4.32-4.32ZM37.93,30a7.52,7.52,0,0,0-7.31,7.75,7.42,7.42,0,1,0,14.82.08A7.72,7.72,0,0,0,37.93,30Z"
+     id="path8" />
+  <path
+     class="cls-1"
+     d="M57.81,48.76H53.7V19.51h4.11Z"
+     id="path10" />
+  <path
+     class="cls-1"
+     d="M81.09,48.76v-3.4H81a8.36,8.36,0,0,1-7.43,4A11.24,11.24,0,0,1,62,37.89c0-5.34,3.76-11.62,11.62-11.62A8.66,8.66,0,0,1,81,29.94h.08V26.86H85.2v21.9ZM73.58,30c-5.06,0-7.51,4.39-7.51,7.83a7.55,7.55,0,1,0,15.1,0A7.49,7.49,0,0,0,73.58,30Z"
+     id="path12" />
+  <path
+     class="cls-1"
+     d="M105.79,48.76V36.86c0-1.7,0-6.84-5.45-6.84-3.44,0-5.77,2.41-5.77,6.8V48.76H90.46V26.86h3.83v2.33h.08a7.77,7.77,0,0,1,6.4-2.92,8.9,8.9,0,0,1,7.75,3.91,10.66,10.66,0,0,1,1.38,5.61v13Z"
+     id="path14" />
+  <path
+     class="cls-1"
+     d="M145.47,48.76h0a4.11,4.11,0,0,1-4.11-4.11v-14h-3V26.86h3V19.51h0a4.11,4.11,0,0,1,4.11,4.11v3.24h3.6v3.76h-3.6Z"
+     id="path16" />
+  <path
+     class="cls-1"
+     d="M136.42,37.49a11.19,11.19,0,1,0-22.37.28,10.32,10.32,0,0,0,.06,1.11h0a11.78,11.78,0,0,0,11.82,10.4,12.13,12.13,0,0,0,9.54-4.56l-3.21-1.9a8.45,8.45,0,0,1-6.33,2.77,7.75,7.75,0,0,1-7.77-6H136.3C136.34,39.31,136.42,38.2,136.42,37.49Zm-18.26-1.06a7.11,7.11,0,0,1,14.15,0Z"
+     id="path18" />
+  <path
+     class="cls-2"
+     d="M154.4,46.72a2.09,2.09,0,1,1-2.08-2.09A2.09,2.09,0,0,1,154.4,46.72Zm-3.74,0a1.65,1.65,0,1,0,1.65-1.67A1.66,1.66,0,0,0,150.66,46.72Zm1.77-1.17c.15,0,.84,0,.84.65a.55.55,0,0,1-.44.58h0c.33.09.39.29.4.6s0,.45.07.55h-.41c0-.07-.06-.14-.07-.45s-.09-.48-.5-.51h-.49v1h-.41V45.55Zm-.6,1.05h.49c.17,0,.54,0,.54-.39s-.28-.27-.48-.27h-.55Z"
+     id="path20" />
+  <path
+     class="cls-3"
+     d="M81.25,58.8h7.52v2H83.42v2.1h4.71v2H83.42v3.83H81.25Z"
+     id="path22" />
+  <path
+     class="cls-3"
+     d="M90.5,58.8H98v1.93H92.66v2h4.65v1.93H92.66v2.07H98v1.94H90.5Z"
+     id="path24" />
+  <path
+     class="cls-3"
+     d="M100,58.8h3.85A4.92,4.92,0,0,1,109,63.7v0a4.94,4.94,0,0,1-5.24,4.94H100Zm2.17,2v5.95h1.68a2.82,2.82,0,0,0,3-2.95v0a2.83,2.83,0,0,0-3-3Z"
+     id="path26" />
+  <path
+     class="cls-3"
+     d="M111,58.8h7.44v1.93h-5.28v2h4.65v1.93h-4.65v2.07h5.35v1.94H111Z"
+     id="path28" />
+  <path
+     class="cls-3"
+     d="M120.43,58.8h4.51a3.91,3.91,0,0,1,2.87,1,3.09,3.09,0,0,1,.85,2.25v0a3.07,3.07,0,0,1-2.11,3.06L129,68.67h-2.54l-2.12-3.16h-1.7v3.16h-2.17Zm4.37,4.79c1,0,1.66-.56,1.66-1.4v0c0-.93-.65-1.41-1.71-1.41H122.6v2.83Z"
+     id="path30" />
+  <path
+     class="cls-3"
+     d="M134,58.73h2l4.23,9.94H138l-.9-2.22h-4.18l-.9,2.22h-2.21Zm2.28,5.81L135,61.33l-1.31,3.21Z"
+     id="path32" />
+  <path
+     class="cls-3"
+     d="M141.76,58.8h2.17v7.89h4.92v2h-7.09Z"
+     id="path34" />
+  <path
+     class="cls-2"
+     d="M73.58,49.31a12.91,12.91,0,0,1-2.38-.22,35.16,35.16,0,1,1-.06-22.59,13.56,13.56,0,0,1,2.44-.23l.36,0a37.88,37.88,0,1,0,0,23Z"
+     id="path36" />
 </svg>
